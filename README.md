@@ -1,43 +1,41 @@
-# damasolara.com
+# damasolara.com — v2 (Lightship reframe)
 
-Static site — plain HTML/CSS/JS, single file. Built for GitHub → Cloudflare Pages.
+Static site — plain HTML/CSS/JS, multi-file. Built for GitHub → Cloudflare Pages.
+Design language derived from lightshiprv.com; colors from Damaso's custom
+palette ("color pallette.jpg" in the project folder): off-white paper (#F4F4F4),
+blush (#EEDBCD), navy ink (#192231), antique gold accent (#C0B283), deep olive
+(#404A42). Pill buttons, oversized grotesque display type (Schibsted Grotesk ≈
+F37 Bolton), rounded full-bleed media, scroll reveals.
+
+## Structure
+```
+index.html      — single page, EN/ES via data-en/data-es attributes
+css/style.css   — design tokens + layout
+js/main.js      — announcement bar, menu, language toggle, reveals,
+                  manifesto word-paint, drag strips, reel autoplay
+images/         — optimized real photography (879 + 903 Linda Flora, portrait)
+video/903-sold.mp4 — compressed vertical "Sold" reel (muted, autoplays in view)
+```
 
 ## Deploy (Cloudflare Pages)
-1. Push this repo to GitHub.
-2. In Cloudflare Pages: Create a project → Connect to Git → select this repo.
-3. Build settings: **none needed** — this is a static site.
-   - Build command: (leave blank)
-   - Build output directory: `/`
-4. Deploy. Then add `damasolara.com` as a custom domain on the Pages project
-   once DNS/nameservers are pointed at Cloudflare.
+1. Push this folder to GitHub.
+2. Cloudflare Pages → Create project → Connect to Git → select repo.
+3. Build command: (blank) · Output directory: `/`
+4. Add `damasolara.com` as custom domain once DNS is on Cloudflare.
 
 ## Before going live — placeholders to swap
-Everything still marked as a placeholder is tagged `data-placeholder="reference"`
-and shows a small "Reference" mark in the corner of the image while
-`SHOW_PLACEHOLDER_MARKERS = true` (near the bottom of index.html, in the
-`<script>` block). Set it to `false` once real assets are in.
-
-Search `index.html` for `REFERENCE IMAGE` comments to find each one:
-- **Hero** — currently a mood/reference photo, swap for Damaso's real hero
-  photography or film footage.
-- **Three property cards** (879 Linda Flora / 248 N Glenroy / 1132 Chantilly)
-  — currently mood/reference architecture photos, swap for real listing photography.
-
-Also confirm/update before publishing:
-- **DRE#** in the footer — currently `[PENDING — confirm]`. Public record
-  shows 02003626; confirm with Damaso before publishing.
-- **Formspree endpoint** — search `YOUR_FORM_ID` in the contact form's
-  `action` attribute and replace with the real Formspree form ID.
-- **Substack URL** — search `SUBSTACK-HANDLE` and replace with the real
-  Substack subdomain for the newsletter subscribe button.
+- **Formspree** — search `YOUR_FORM_ID` in index.html and replace with the real
+  Formspree form ID.
+- **Substack** — search `SUBSTACK-HANDLE` and replace with the real subdomain.
+- **DRE#** — footer shows `[PENDING — confirm]`. Public record shows 02003626;
+  confirm with Damaso before publishing.
 
 ## Notes
-- The portrait (profile section) is real — Damaso's own headshot — already
-  embedded, no action needed there.
-- EN/ES toggle, Compass compliance footer (Equal Housing + broker disclosure),
-  and the Formspree contact form are all wired and functional.
-- Images are embedded as base64 data URIs for now so the single file is
-  fully portable. For production performance, consider extracting them to
-  an `/images` folder and referencing them as normal file paths instead —
-  happy to do that pass once real photography is in and the placeholder
-  swaps are done.
+- All photography is real: 879 Linda Flora (Selects/FINAL FINAL + Shoot 1) and
+  903 Linda Flora (Hi Res - House + Lifestyle). Portrait is Damaso's headshot
+  carried over from v1.
+- The hero videos on file are all vertical 9:16 reels, so the hero uses the
+  twilight facade photo; the reel plays inside the 903 card instead.
+- EN/ES persists in localStorage; announcement dismissal persists per session.
+- Fonts load from Google Fonts (Schibsted Grotesk). To self-host later, download
+  the woff2 files and swap the `<link>` for `@font-face` rules.
