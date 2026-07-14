@@ -3,8 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Damaso Lara — Beverly Hills, Bel Air & the Westside</title>
+<title>Damaso Lara | Beverly Hills, Bel Air & the Westside</title>
 <meta name="description" content="Private representation for buyers, sellers, and developers across Beverly Hills, Bel Air, and the Westside — in English and Spanish.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#192231">
+<link rel="canonical" href="https://damasolara.com/">
+
+<!-- Social sharing (Open Graph + Twitter) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Damaso Lara">
+<meta property="og:title" content="Damaso Lara | Beverly Hills, Bel Air & the Westside">
+<meta property="og:description" content="Private representation for buyers, sellers, and developers across Beverly Hills, Bel Air, and the Westside — in English and Spanish.">
+<meta property="og:url" content="https://damasolara.com/">
+<meta property="og:image" content="https://damasolara.com/images/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A modern estate on Linda Flora Drive in Bel Air at dusk.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Damaso Lara | Beverly Hills, Bel Air & the Westside">
+<meta name="twitter:description" content="Private representation for buyers, sellers, and developers across the Westside — in English and Spanish.">
+<meta name="twitter:image" content="https://damasolara.com/images/og-cover.jpg">
+<meta name="twitter:image:alt" content="A modern estate on Linda Flora Drive in Bel Air at dusk.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -12,17 +34,6 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
 </head>
 <body>
-
-<!-- Announcement bar -->
-<div class="annc" id="annc">
-  <p>
-    <span data-en="903 Linda Flora, Bel Air — Sold." data-es="903 Linda Flora, Bel Air — Vendida.">903 Linda Flora, Bel Air — Sold.</span>
-    <a href="#work" data-en="See the work" data-es="Ver la obra">See the work</a>
-  </p>
-  <button class="annc__close" id="anncClose" aria-label="Close announcement">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5"/></svg>
-  </button>
-</div>
 
 <!-- Floating nav -->
 <header class="nav" id="nav">
@@ -56,18 +67,16 @@
 <main id="top">
 
   <!-- HERO -->
-  <section class="hero">
-    <img class="hero__media" src="images/879-facade-twilight.jpg" alt="879 Linda Flora at dusk — a modern gabled estate in Bel Air framed by palms" fetchpriority="high">
+  <section class="hero" id="hero">
+    <div class="hero__layer hero__layer--img" data-depth="1">
+      <img class="hero__media" src="images/879-facade-twilight.jpg" alt="879 Linda Flora at dusk — a modern gabled estate in Bel Air framed by palms" fetchpriority="high">
+    </div>
     <div class="hero__scrim" aria-hidden="true"></div>
-    <div class="hero__inner">
+    <div class="hero__inner hero__layer" data-depth="-0.35">
       <h1 class="hero__title">
         <span class="line"><span data-en="Your next address" data-es="Su próxima dirección">Your next address</span></span>
         <span class="line"><span data-en="isn&#8217;t on the market." data-es="no está en el mercado.">isn&#8217;t on the market.</span></span>
       </h1>
-    </div>
-    <div class="hero__foot">
-      <span class="hero__arrow" aria-hidden="true">↓</span>
-      <span data-en="Scroll to explore" data-es="Desliza para explorar">Scroll to explore</span>
     </div>
   </section>
 
@@ -83,9 +92,6 @@
 
   <!-- WORK -->
   <section class="work" id="work">
-    <div class="work__head">
-      <span class="pill-label" data-en="Selected Work · 2023 — 2026" data-es="Obra selecta · 2023 — 2026">Selected Work · 2023 — 2026</span>
-    </div>
 
     <!-- 879 Linda Flora -->
     <article class="property">
@@ -120,7 +126,6 @@
       </header>
       <figure class="property__lead property__lead--film reveal" data-gallery="903" data-idx="0">
         <video src="video/903-sold.mp4" poster="images/903-sold-poster.jpg" muted loop playsinline preload="none" aria-label="903 Linda Flora — sold, video tour"></video>
-        <figcaption data-en="Sold — as seen on film" data-es="Vendida — como se vio en video">Sold — as seen on film</figcaption>
       </figure>
       <div class="strip" data-drag>
         <figure data-gallery="903" data-idx="0"><img src="images/903-drone.jpg" alt="Aerial view of 903 Linda Flora — white contemporary estate with pool" loading="lazy"></figure>
@@ -156,7 +161,6 @@
 
   <!-- METHOD -->
   <section class="method" id="method">
-    <span class="pill-label" data-en="Method" data-es="Método">Method</span>
     <div class="method__rows">
       <article class="mrow reveal">
         <span class="mrow__n">01</span>
@@ -179,7 +183,6 @@
   <!-- MAP: the Westside, mapped -->
   <section class="wsmap" id="map">
     <div class="wsmap__head">
-      <span class="pill-label reveal" data-en="The Neighborhood" data-es="El Vecindario">The Neighborhood</span>
       <h2 class="reveal" data-en="The Westside, mapped." data-es="El Westside, en mapa.">The Westside, mapped.</h2>
       <p class="wsmap__sub reveal" data-en="Every address on the record, and the life that surrounds them — clubs, schools, markets, and the tables that matter." data-es="Cada dirección del registro y la vida que las rodea — clubes, colegios, mercados y las mesas que importan.">Every address on the record, and the life that surrounds them — clubs, schools, markets, and the tables that matter.</p>
     </div>
@@ -195,7 +198,7 @@
       </div>
       <aside class="wsmap__panel" id="wspanel" aria-live="polite"></aside>
     </div>
-    <p class="wsmap__note" data-en="Illustrated map — geometry is impressionistic, locations are real. Also represented: 6020 Lido Ln, Newport Beach." data-es="Mapa ilustrado — la geometría es impresionista, las ubicaciones son reales. También representada: 6020 Lido Ln, Newport Beach.">Illustrated map — geometry is impressionistic, locations are real. Also represented: 6020 Lido Ln, Newport Beach.</p>
+    <p class="wsmap__note" data-en="Illustrated map — geometry is impressionistic, locations are real." data-es="Mapa ilustrado — la geometría es impresionista, las ubicaciones son reales.">Illustrated map — geometry is impressionistic, locations are real.</p>
   </section>
 
   <!-- ABOUT -->
@@ -223,6 +226,7 @@
       <h2 class="contact__title reveal" data-en="Start the conversation." data-es="Empecemos la conversación.">Start the conversation.</h2>
       <p class="contact__sub reveal" data-en="For a private conversation about buying, selling, or developing on the Westside." data-es="Para una conversación privada sobre comprar, vender o desarrollar en el Westside.">For a private conversation about buying, selling, or developing on the Westside.</p>
       <form class="form reveal" action="https://formspree.io/f/mbdnjejo" method="POST">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
         <div class="form__row">
           <input type="text" name="name" required placeholder="Name" data-ph-en="Name" data-ph-es="Nombre" aria-label="Name">
           <input type="email" name="email" required placeholder="name@email.com" aria-label="Email">
@@ -244,7 +248,6 @@
   <!-- NEWSLETTER -->
   <section class="news">
     <div class="news__inner">
-      <span class="pill-label pill-label--onDark" data-en="Newsletter" data-es="Boletín">Newsletter</span>
       <h2 class="reveal" data-en="Notes on the Westside." data-es="Notas sobre el Westside.">Notes on the Westside.</h2>
       <p class="reveal" data-en="On timing, and on the moves beneath the market. Occasionally, in your inbox." data-es="Sobre el timing y los movimientos debajo del mercado. Ocasionalmente, en su correo.">On timing, and on the moves beneath the market. Occasionally, in your inbox.</p>
       <!-- PLACEHOLDER-SUBSTACK: swap these three cards for Damaso's real posts (title, number, URL) once published -->
@@ -297,7 +300,7 @@
   </div>
 </footer>
 
-<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo viewer">
   <figure class="lb__stage">
     <img id="lbImg" alt="">
   </figure>

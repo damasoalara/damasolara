@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://damasolara.com/sitemap.xml

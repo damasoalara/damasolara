@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;overflow:hidden}iframe{border:0;width:100vw;height:100vh}</style></head>
+<body><iframe id="f" src="/"></iframe>
+<script>
+  var q = new URLSearchParams(location.search);
+  var f = document.getElementById('f');
+  f.addEventListener('load', function () {
+    setTimeout(function () {
+      var d = f.contentDocument, w = f.contentWindow;
+      d.querySelectorAll('.reveal').forEach(function (el){ el.style.transition='none'; el.classList.add('is-in'); });
+      // simulate a hero pointer move to prove parallax offsets apply
+      if (q.get('parallax')) {
+        var hero = d.getElementById('hero'), r = hero.getBoundingClientRect();
+        var ev = new PointerEvent('pointermove', {clientX: r.left + r.width*0.85, clientY: r.top + r.height*0.2, pointerType:'mouse', bubbles:true});
+        hero.dispatchEvent(ev);
+        setTimeout(function(){}, 500);
+      }
+      var sel = q.get('goto');
+      if (sel) d.querySelector(sel).scrollIntoView();
+      else w.scrollTo(0, parseInt(q.get('y')||'0',10));
+    }, 900);
+  });
+</script></body></html>

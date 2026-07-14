@@ -2,15 +2,6 @@
 (function () {
   "use strict";
 
-  /* ---------- Announcement bar ---------- */
-  var annc = document.getElementById("annc");
-  var anncClose = document.getElementById("anncClose");
-  if (sessionStorage.getItem("annc-dismissed")) annc.classList.add("is-hidden");
-  anncClose.addEventListener("click", function () {
-    annc.classList.add("is-hidden");
-    sessionStorage.setItem("annc-dismissed", "1");
-  });
-
   /* ---------- Mobile menu ---------- */
   var burger = document.getElementById("burger");
   var menu = document.getElementById("menu");
@@ -201,18 +192,23 @@
     lbTitle.textContent = LB_TITLES[lbGal];
     lbCount.textContent = (lbIdx + 1) + " / " + GALLERIES[lbGal].length;
   }
+  var lbReturnFocus = null;
+  var lbClose_btn = document.getElementById("lbClose");
   function lbOpen(key, idx) {
     if (!GALLERIES[key]) return;
+    lbReturnFocus = document.activeElement;
     lbGal = key; lbIdx = idx || 0;
     lbShow();
     lb.classList.add("open");
     lb.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
+    lbClose_btn.focus();
   }
   function lbClose() {
     lb.classList.remove("open");
     lb.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    if (lbReturnFocus && lbReturnFocus.focus) lbReturnFocus.focus(); // return to where they were
   }
   function lbGo(idx) {
     var n = GALLERIES[lbGal].length;
@@ -234,8 +230,16 @@
   window.addEventListener("keydown", function (e) {
     if (!lb.classList.contains("open")) return;
     if (e.key === "Escape") lbClose();
-    if (e.key === "ArrowLeft") lbGo(lbIdx - 1);
-    if (e.key === "ArrowRight") lbGo(lbIdx + 1);
+    else if (e.key === "ArrowLeft") lbGo(lbIdx - 1);
+    else if (e.key === "ArrowRight") lbGo(lbIdx + 1);
+    else if (e.key === "Tab") {
+      // Trap focus within the dialog's controls
+      var f = [lbClose_btn, document.getElementById("lbPrev"), document.getElementById("lbNext")];
+      var i = f.indexOf(document.activeElement);
+      e.preventDefault();
+      var next = e.shiftKey ? (i <= 0 ? f.length - 1 : i - 1) : (i >= f.length - 1 ? 0 : i + 1);
+      f[next].focus();
+    }
   });
   var lbTouchX = null;
   lb.addEventListener("touchstart", function (e) { lbTouchX = e.touches[0].clientX; }, { passive: true });
@@ -256,6 +260,79 @@
       target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
     });
   });
+
+  /* ---------- Hero 2.5D parallax (Apple Photos–style depth) ----------
+     Mouse on desktop, device tilt on mobile. Transform-only, heavily eased,
+     restrained. Fully disabled under reduced-motion. */
+  (function heroParallax() {
+    var hero = document.getElementById("hero");
+    if (!hero || reduceMotion) return;
+    var layers = Array.prototype.slice.call(hero.querySelectorAll(".hero__layer"));
+    if (!layers.length) return;
+
+    var MAX = 16;          // px of travel for a depth of 1
+    var TILT = 2.2;        // deg of perspective tilt at the extremes
+    var tx = 0, ty = 0;    // target, normalized -1..1
+    var cx = 0, cy = 0;    // current (eased)
+    var raf = null, active = false;
+
+    function render() {
+      cx += (tx - cx) * 0.08;
+      cy += (ty - cy) * 0.08;
+      layers.forEach(function (el) {
+        var d = parseFloat(el.getAttribute("data-depth")) || 0;
+        var mx = -cx * MAX * d;
+        var my = -cy * MAX * d;
+        el.style.transform =
+          "translate3d(" + mx.toFixed(2) + "px," + my.toFixed(2) + "px,0)" +
+          " rotateX(" + (cy * TILT * (d > 0 ? 1 : 0.4)).toFixed(2) + "deg)" +
+          " rotateY(" + (-cx * TILT * (d > 0 ? 1 : 0.4)).toFixed(2) + "deg)";
+      });
+      if (Math.abs(tx - cx) > 0.001 || Math.abs(ty - cy) > 0.001 || active) {
+        raf = requestAnimationFrame(render);
+      } else {
+        raf = null;
+      }
+    }
+    function kick() { if (!raf) raf = requestAnimationFrame(render); }
+
+    // Desktop: pointer within the hero
+    hero.addEventListener("pointermove", function (e) {
+      if (e.pointerType === "touch") return;
+      var r = hero.getBoundingClientRect();
+      tx = ((e.clientX - r.left) / r.width - 0.5) * 2;
+      ty = ((e.clientY - r.top) / r.height - 0.5) * 2;
+      active = true; kick();
+    });
+    hero.addEventListener("pointerleave", function () {
+      tx = 0; ty = 0; active = false; kick();
+    });
+
+    // Mobile: device tilt (iOS 13+ needs a permission gesture)
+    function attachTilt() {
+      var base = null;
+      window.addEventListener("deviceorientation", function (e) {
+        if (e.gamma == null || e.beta == null) return;
+        if (!base) base = { g: e.gamma, b: e.beta };
+        tx = Math.max(-1, Math.min(1, (e.gamma - base.g) / 22));
+        ty = Math.max(-1, Math.min(1, (e.beta - base.b) / 22));
+        active = true; kick();
+      }, true);
+    }
+    var DOE = window.DeviceOrientationEvent;
+    if (DOE && typeof DOE.requestPermission === "function") {
+      // iOS: request once on first tap anywhere, then detach the gesture hook
+      var ask = function () {
+        DOE.requestPermission().then(function (state) {
+          if (state === "granted") attachTilt();
+        }).catch(function () {});
+        window.removeEventListener("touchend", ask);
+      };
+      window.addEventListener("touchend", ask, { once: true });
+    } else if (DOE) {
+      attachTilt();
+    }
+  })();
 
   /* ---------- Footer year ---------- */
   var yr = document.getElementById("yr");
