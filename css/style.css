@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Damaso Lara — Lightship-derived design system
+   Damaso Lara: Lightship-derived design system
    Off-white paper / blush / navy ink / antique gold accent / deep olive
    ========================================================================== */
 
@@ -36,7 +36,7 @@ img, video { display: block; max-width: 100%; height: auto; }
 
 a { color: inherit; text-decoration: none; }
 
-/* Keyboard focus — visible ring for keyboard users only */
+/* Keyboard focus: visible ring for keyboard users only */
 :focus-visible {
   outline: 2px solid var(--ink);
   outline-offset: 3px;

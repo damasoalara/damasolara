@@ -1,6 +1,7 @@
-/* Damaso Lara — the Westside, mapped.
-   Hand-drawn interactive SVG in the site palette. No mapping libraries.
-   Geometry is illustrative; pin positions are geocoded (Nominatim/Census). */
+/* Damaso Lara: the Westside, mapped.
+   Interactive SVG in the site palette. No mapping libraries.
+   Roads, water, parks and golf courses are real OpenStreetMap geometry
+   (js/mapdata.js); pin positions are geocoded (Nominatim/Census). */
 (function () {
   "use strict";
   var NS = "http://www.w3.org/2000/svg";
@@ -71,7 +72,7 @@
     { n: "Waldorf Astoria", c: "hotel", lat: 34.06658, lon: -118.41164, en: "Wilshire at Santa Monica.", es: "Wilshire y Santa Monica." }
   ];
 
-  /* Geography (roads, water, parks) is real OSM data — see js/mapdata.js */
+  /* Geography (roads, water, parks) is real OSM data (see js/mapdata.js) */
 
   var HOODS = [
     ["BEL AIR", -118.452, 34.0935], ["HOLMBY HILLS", -118.427, 34.087],
@@ -82,7 +83,7 @@
     ["LITTLE HOLMBY", -118.4405, 34.068]
   ];
 
-  // Cultural landmarks — subtle marker + quiet label (not filterable pins)
+  // Cultural landmarks: subtle marker + quiet label (not filterable pins)
   var LANDMARKS = [
     { n: "Getty Center", lat: 34.0779, lon: -118.4753 },
     { n: "Skirball Cultural Center", lat: 34.1017, lon: -118.4786 },
@@ -117,7 +118,7 @@
     for (var t = 0; t < nt; t++) el("circle", { cx: bb[0] + R() * (bb[2] - bb[0]), cy: bb[1] + R() * (bb[3] - bb[1]), r: 1.7 + R() * 1.9, fill: R() < 0.5 ? COL.tree : COL.tree2, opacity: 0.45 }, lyTrees);
   });
 
-  // Golf courses — real footprint + fairways, greens, bunkers, water so each course's
+  // Golf courses: real footprint + fairways, greens, bunkers, water so each course's
   // distinctive shape (esp. Bel-Air CC, the heart of the town) reads immediately.
   var G = D.golf || { courses: [], fair: [], green: [], bunker: [], gwater: [] };
   var GC = { base: "#C3CDA1", bedge: "#8C9A64", fair: "#AEBE82", green: "#9BB36F", sand: "#ECE2C4" };
@@ -134,7 +135,7 @@
     el("path", { d: ringD(w.pts), fill: COL.water, stroke: COL.wedge, "stroke-width": 1.2, "vector-effect": "non-scaling-stroke" }, lyWater);
   });
 
-  // Roads — one merged path per class; casing pass, then fill pass (Apple-Maps layering)
+  // Roads: one merged path per class; casing pass, then fill pass (Apple-Maps layering)
   var CASE = { 9: [COL.fcase, 9], 1: [COL.acase, 6.5], 2: [COL.rcase, 5], 3: [COL.rcase, 3.4], 4: [COL.rcase, 2.4] };
   var FILL = { 9: [COL.fwy, 6.5], 1: [COL.art, 4.6], 2: [COL.art, 3.3], 3: [COL.road, 2.1], 4: [COL.road, 1.5] };
   var ORDER = [4, 3, 2, 1, 9], merged = {};
@@ -148,7 +149,7 @@
     el("text", { x: L.x, y: L.y, "text-anchor": "middle", "font-size": size, "font-weight": art ? 600 : 500, fill: art ? COL.stArt : COL.st, transform: "rotate(" + L.a + " " + L.x + " " + L.y + ")", style: "paint-order:stroke;stroke:" + COL.land + ";stroke-width:3px;stroke-linejoin:round" }, lyStreet).textContent = L.n;
   });
 
-  // Golf-course names — once per course, at its largest polygon
+  // Golf-course names: once per course, at its largest polygon
   var courseSeen = {};
   G.courses.forEach(function (c) {
     if (!c.n) return;
@@ -167,7 +168,7 @@
     el("text", { x: X(h[1]), y: Y(h[2]), "text-anchor": "middle", "font-size": 14, fill: COL.hood, "font-weight": 600, "letter-spacing": "2.5px", opacity: 0.66, style: "paint-order:stroke;stroke:" + COL.land + ";stroke-width:3.5px" }, lyHood).textContent = h[0];
   });
 
-  // Cultural landmarks — a small hollow marker + quiet label
+  // Cultural landmarks: a small hollow marker + quiet label
   LANDMARKS.forEach(function (m) {
     var x = X(m.lon), y = Y(m.lat);
     el("circle", { cx: x, cy: y, r: 3, fill: "none", stroke: COL.st, "stroke-width": 1.4, "vector-effect": "non-scaling-stroke" }, lyStreet);
