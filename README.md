@@ -13,10 +13,17 @@ index.html      — single page, EN/ES via data-en/data-es attributes
 css/style.css   — design tokens + layout
 js/main.js      — announcement bar, menu, language toggle, reveals,
                   manifesto word-paint, drag strips, reel autoplay
-js/map.js       — "The Westside, mapped": hand-drawn interactive SVG map
-                  (no map libraries). Pin positions geocoded via
-                  Nominatim/Census; geometry is illustrative. Category
-                  chips, side panel, bounded pan/zoom, EN/ES.
+js/map.js       — "The Westside, mapped": interactive SVG map, no map
+                  libraries. Roads/water/parks are REAL OpenStreetMap
+                  geometry (js/mapdata.js), projected + styled Apple-Maps-
+                  style in our palette. Category chips, side panel, bounded
+                  pan/zoom, EN/ES.
+js/mapdata.js   — generated: real OSM roads (6k segments, merged 1 path/
+                  class), reservoirs, parks, and detailed golf courses
+                  (footprint + fairways/greens/bunkers/water so Bel-Air CC
+                  and the other clubs are recognizable), + 48 road labels.
+                  Regenerate via Overpass (scratchpad/osm) if the area changes;
+                  golf_course relations must be fetched with nwr + stitched.
 images/         — optimized real photography (879 + 903 Linda Flora, portrait)
 video/903-sold.mp4 — compressed vertical "Sold" reel (muted, autoplays in view)
 ```
@@ -53,3 +60,19 @@ video/903-sold.mp4 — compressed vertical "Sold" reel (muted, autoplays in view
   Sold vs Represented per address with Damaso.
 - Fonts load from Google Fonts (Schibsted Grotesk). To self-host later, download
   the woff2 files and swap the `<link>` for `@font-face` rules.
+
+## Accessibility & security
+- WCAG AA pass: darkened secondary text to clear 4.5:1 contrast, keyboard
+  focus-visible rings, lightbox is a focus-managed `aria-modal` dialog
+  (focus enters on open, Tab is trapped, returns to the opener on close),
+  hero parallax + all motion disabled under prefers-reduced-motion.
+- `_headers` sets edge security headers on Cloudflare Pages: CSP, HSTS,
+  X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy
+  (gyroscope/accelerometer allowed to self for the hero tilt effect).
+- Contact form has a hidden `_gotcha` honeypot (Formspree spam filter).
+- `robots.txt` + `sitemap.xml` reference https://damasolara.com.
+
+## Social sharing
+- Open Graph + Twitter card meta in <head>; share title is prefixed
+  "Damaso Lara | ". Preview image is images/og-cover.jpg (1200×630).
+  All absolute URLs assume the production domain damasolara.com.

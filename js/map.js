@@ -36,7 +36,7 @@
   /* ---- Points (geocoded) ---- */
   var PTS = [
     // Represented properties
-    { n: "879 Linda Flora", c: "home", lat: 34.08307, lon: -118.46552, en: "Bel Air · Represented", es: "Bel Air · Representada", link: "#work" },
+    { n: "879 Linda Flora", c: "home", lat: 34.08307, lon: -118.46552, en: "Bel Air · Sold", es: "Bel Air · Vendida", link: "#work" },
     { n: "903 Linda Flora", c: "home", lat: 34.08400, lon: -118.46530, en: "Bel Air · Sold", es: "Bel Air · Vendida", link: "#work" },
     { n: "1149 Linda Flora Dr", c: "home", lat: 34.09028, lon: -118.46564, en: "Bel Air · Represented", es: "Bel Air · Representada" },
     { n: "936 Chantilly Rd", c: "home", lat: 34.08685, lon: -118.45397, en: "Bel Air · Represented", es: "Bel Air · Representada" },
@@ -46,8 +46,8 @@
     { n: "642 Perugia Way", c: "home", lat: 34.08072, lon: -118.44901, en: "Bel Air · Represented", es: "Bel Air · Representada" },
     { n: "146 Groverton Pl", c: "home", lat: 34.07451, lon: -118.44804, en: "Bel Air · Development", es: "Bel Air · Desarrollo" },
     { n: "9604 Heather Rd", c: "home", lat: 34.10322, lon: -118.40597, en: "Beverly Hills · Represented", es: "Beverly Hills · Representada" },
-    { n: "14367 Mulholland Dr", c: "home", lat: 34.13058, lon: -118.44613, en: "Mulholland · Represented", es: "Mulholland · Representada" },
-    { n: "15415 Milldale Dr", c: "home", lat: 34.12573, lon: -118.46796, en: "Brentwood · Represented", es: "Brentwood · Representada" },
+    { n: "14367 Mulholland Dr", c: "home", lat: 34.13058, lon: -118.44613, en: "Bel Air · Represented", es: "Bel Air · Representada" },
+    { n: "15415 Milldale Dr", c: "home", lat: 34.12573, lon: -118.46796, en: "Bel Air · Represented", es: "Bel Air · Representada" },
     // Tennis & country clubs
     { n: "Bel-Air Country Club", c: "clubs", lat: 34.07837, lon: -118.44950, en: "Golf above Sunset, since 1926.", es: "Golf sobre Sunset, desde 1926." },
     { n: "Los Angeles Country Club", c: "clubs", lat: 34.07034, lon: -118.42221, en: "Two courses along Wilshire.", es: "Dos campos sobre Wilshire." },
@@ -71,47 +71,24 @@
     { n: "Waldorf Astoria", c: "hotel", lat: 34.06658, lon: -118.41164, en: "Wilshire at Santa Monica.", es: "Wilshire y Santa Monica." }
   ];
 
-  /* ---- Illustrative geography ---- */
-  // Roads as polylines of [lon,lat]; t: 1 arterial, 2 secondary, 3 local, 9 freeway
-  var ROADS = [
-    { n: "Sunset Blvd", t: 1, lbl: [-118.437, 34.0805, -6], pts: [[-118.497,34.0755],[-118.478,34.0742],[-118.466,34.0765],[-118.455,34.0788],[-118.447,34.0782],[-118.437,34.0808],[-118.428,34.0798],[-118.417,34.0818],[-118.408,34.0838],[-118.396,34.0872],[-118.383,34.0895]] },
-    { n: "Wilshire Blvd", t: 1, lbl: [-118.428, 34.0596, 4], pts: [[-118.497,34.0435],[-118.475,34.0505],[-118.456,34.0585],[-118.44,34.0603],[-118.42,34.0605],[-118.404,34.0645],[-118.39,34.0672],[-118.383,34.069]] },
-    { n: "Mulholland Dr", t: 1, lbl: [-118.452, 34.1332, -4], pts: [[-118.497,34.1275],[-118.483,34.1312],[-118.468,34.1288],[-118.455,34.1338],[-118.446,34.1305],[-118.435,34.1332],[-118.42,34.1352],[-118.405,34.1378],[-118.39,34.1398],[-118.383,34.1405]] },
-    { n: "Santa Monica Blvd", t: 2, lbl: [-118.412, 34.0742, 12], pts: [[-118.44,34.052],[-118.425,34.0625],[-118.41,34.073],[-118.398,34.0795],[-118.39,34.084]] },
-    { n: "San Vicente Blvd", t: 2, lbl: [-118.482, 34.0525, -8], pts: [[-118.497,34.058],[-118.478,34.0525],[-118.46,34.0478],[-118.45,34.046]] },
-    { n: "Stone Canyon Rd", t: 2, lbl: [-118.4515, 34.0985, 78], pts: [[-118.4465,34.0785],[-118.449,34.086],[-118.4525,34.0925],[-118.4508,34.101],[-118.4535,34.11],[-118.455,34.1195],[-118.4555,34.128]] },
-    { n: "Beverly Glen Blvd", t: 2, lbl: [-118.4375, 34.108, 82], pts: [[-118.433,34.081],[-118.4365,34.09],[-118.4345,34.0985],[-118.4385,34.108],[-118.4415,34.1175],[-118.4435,34.1265],[-118.4435,34.132]] },
-    { n: "Benedict Canyon", t: 2, lbl: [-118.4215, 34.108, 80], pts: [[-118.4135,34.084],[-118.4175,34.093],[-118.42,34.102],[-118.4235,34.112],[-118.4275,34.1225],[-118.429,34.131]] },
-    { n: "Coldwater Canyon", t: 2, lbl: [-118.394, 34.112, 78], pts: [[-118.3955,34.09],[-118.392,34.099],[-118.394,34.109],[-118.3965,34.119],[-118.3945,34.129],[-118.3935,34.1385]] },
-    { n: "Bellagio Rd", t: 3, lbl: [-118.4555, 34.0855, -50], pts: [[-118.452,34.0782],[-118.4565,34.0825],[-118.4585,34.0875],[-118.4545,34.0905],[-118.4495,34.0885],[-118.4475,34.0845]] },
-    { n: "Linda Flora Dr", t: 3, lbl: [-118.4675, 34.0875, 86], pts: [[-118.4625,34.0805],[-118.4655,34.0845],[-118.4652,34.089],[-118.4668,34.0935]] },
-    { n: "Chantilly Rd", t: 3, lbl: [-118.4535, 34.0905, 80], pts: [[-118.4525,34.0838],[-118.454,34.0872],[-118.4568,34.0912],[-118.4572,34.0938]] },
-    { n: "Savona Rd", t: 3, lbl: [-118.4625, 34.0995, -20], pts: [[-118.4655,34.0955],[-118.4615,34.0975],[-118.4592,34.0998],[-118.457,34.1015]] },
-    { n: "Roscomare Rd", t: 3, lbl: [-118.462, 34.1105, 82], pts: [[-118.4585,34.089],[-118.4605,34.098],[-118.4625,34.107],[-118.464,34.116],[-118.4655,34.124]] },
-    { n: "405", t: 9, lbl: [-118.4775, 34.099, 82], pts: [[-118.4745,34.036],[-118.4735,34.05],[-118.4755,34.064],[-118.4775,34.078],[-118.473,34.092],[-118.4705,34.106],[-118.469,34.12],[-118.4665,34.134],[-118.465,34.148]] }
-  ];
-
-  // Golf / parks: soft polygons [lon,lat]
-  var GREENS = [
-    { n: "Bel-Air CC", pts: [[-118.456,34.0795],[-118.4505,34.084],[-118.4445,34.0855],[-118.4415,34.082],[-118.445,34.0775],[-118.4525,34.0765]] },
-    { n: "Los Angeles CC", pts: [[-118.432,34.0575],[-118.4235,34.0555],[-118.4135,34.0585],[-118.4125,34.0665],[-118.42,34.071],[-118.4295,34.0665]] },
-    { n: "Brentwood CC", pts: [[-118.4875,34.0435],[-118.4765,34.0425],[-118.4725,34.049],[-118.479,34.0545],[-118.489,34.051]] },
-    { n: "Holmby Park", pts: [[-118.4335,34.0745],[-118.4295,34.0735],[-118.4285,34.077],[-118.4325,34.078]] }
-  ];
-
-  // Stone Canyon Reservoir
-  var WATERS = [
-    { n: "Stone Canyon Reservoir", pts: [[-118.4545,34.0955],[-118.4505,34.0945],[-118.4475,34.0985],[-118.4485,34.104],[-118.452,34.1075],[-118.4545,34.104],[-118.4525,34.0995]] }
-  ];
-
-  // UCLA campus block
-  var CAMPUS = { n: "UCLA", pts: [[-118.4545,34.0625],[-118.4375,34.0615],[-118.437,34.0745],[-118.4525,34.0755]] };
+  /* Geography (roads, water, parks) is real OSM data — see js/mapdata.js */
 
   var HOODS = [
     ["BEL AIR", -118.452, 34.0935], ["HOLMBY HILLS", -118.427, 34.087],
     ["BEVERLY HILLS", -118.402, 34.0735], ["WESTWOOD", -118.443, 34.058],
-    ["BRENTWOOD", -118.482, 34.062], ["BEVERLY GLEN", -118.4405, 34.1145],
-    ["TROUSDALE", -118.402, 34.1055], ["SEPULVEDA PASS", -118.478, 34.108]
+    ["BRENTWOOD", -118.485, 34.056], ["BEVERLY GLEN", -118.4405, 34.1145],
+    ["TROUSDALE", -118.402, 34.1055], ["SEPULVEDA PASS", -118.481, 34.108],
+    ["BEVERLY CREST", -118.409, 34.1205], ["CENTURY CITY", -118.414, 34.0515],
+    ["LITTLE HOLMBY", -118.4405, 34.068]
+  ];
+
+  // Cultural landmarks — subtle marker + quiet label (not filterable pins)
+  var LANDMARKS = [
+    { n: "Getty Center", lat: 34.0779, lon: -118.4753 },
+    { n: "Skirball Cultural Center", lat: 34.1017, lon: -118.4786 },
+    { n: "Bel Air East Gate", lat: 34.0818, lon: -118.4338 },
+    { n: "Hammer Museum", lat: 34.0596, lon: -118.4436 },
+    { n: "UCLA", lat: 34.0689, lon: -118.4452 }
   ];
 
   /* ---- Build ---- */
@@ -128,94 +105,74 @@
 
   el("rect", { x: -300, y: -300, width: W + 600, height: H + 600, fill: COL.land }, lyLand);
 
-  // Soft hill masses north of Sunset and in the canyons
-  var HILLS = [
-    [-118.47, 34.10, 340, 260], [-118.44, 34.115, 300, 220], [-118.41, 34.12, 300, 230],
-    [-118.455, 34.088, 220, 150], [-118.425, 34.098, 220, 160], [-118.39, 34.105, 200, 170],
-    [-118.462, 34.128, 260, 150], [-118.398, 34.132, 240, 140]
-  ];
-  HILLS.forEach(function (h) {
-    el("ellipse", { cx: X(h[0]), cy: Y(h[1]), rx: h[2] / 2, ry: h[3] / 2, fill: COL.hill, opacity: 0.6 }, lyHill);
+  var D = window.MAP_DATA || { roads: [], water: [], parks: [], golf: { courses: [], fair: [], green: [], bunker: [], gwater: [] }, labels: [] };
+  function ringD(pts) { var d = "M"; for (var i = 0; i < pts.length; i++) d += pts[i][0] + " " + pts[i][1] + " "; return d + "Z"; }
+  function bbox(pts) { var xs = pts.map(function (p) { return p[0]; }), ys = pts.map(function (p) { return p[1]; }); return [Math.min.apply(0, xs), Math.min.apply(0, ys), Math.max.apply(0, xs), Math.max.apply(0, ys)]; }
+  function mergedRings(arr) { var d = ""; for (var i = 0; i < arr.length; i++) d += ringD(arr[i]) + " "; return d; }
+
+  // Parks (real polygons) with a light tree scatter
+  D.parks.forEach(function (p) {
+    el("path", { d: ringD(p.pts), fill: COL.park, stroke: COL.pedge, "stroke-width": 1, "vector-effect": "non-scaling-stroke", "fill-opacity": 0.72 }, lyGreen);
+    var bb = bbox(p.pts), area = (bb[2] - bb[0]) * (bb[3] - bb[1]), nt = Math.min(30, Math.round(area / 1100));
+    for (var t = 0; t < nt; t++) el("circle", { cx: bb[0] + R() * (bb[2] - bb[0]), cy: bb[1] + R() * (bb[3] - bb[1]), r: 1.7 + R() * 1.9, fill: R() < 0.5 ? COL.tree : COL.tree2, opacity: 0.45 }, lyTrees);
   });
 
-  function poly(pts) { return pts.map(function (p, i) { return (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1); }).join(" ") + " Z"; }
+  // Golf courses — real footprint + fairways, greens, bunkers, water so each course's
+  // distinctive shape (esp. Bel-Air CC, the heart of the town) reads immediately.
+  var G = D.golf || { courses: [], fair: [], green: [], bunker: [], gwater: [] };
+  var GC = { base: "#C3CDA1", bedge: "#8C9A64", fair: "#AEBE82", green: "#9BB36F", sand: "#ECE2C4" };
+  G.courses.forEach(function (c) {
+    el("path", { d: ringD(c.pts), fill: GC.base, stroke: GC.bedge, "stroke-width": 1.4, "stroke-linejoin": "round", "vector-effect": "non-scaling-stroke" }, lyGreen);
+  });
+  if (G.fair.length)   el("path", { d: mergedRings(G.fair),   fill: GC.fair,   "fill-rule": "evenodd", stroke: "none" }, lyGreen);
+  if (G.green.length)  el("path", { d: mergedRings(G.green),  fill: GC.green,  stroke: "none" }, lyGreen);
+  if (G.bunker.length) el("path", { d: mergedRings(G.bunker), fill: GC.sand,   stroke: "none" }, lyGreen);
+  if (G.gwater.length) el("path", { d: mergedRings(G.gwater), fill: COL.water, stroke: COL.wedge, "stroke-width": 0.8, "vector-effect": "non-scaling-stroke" }, lyGreen);
 
-  // Flats: hint of a street grid (Westwood / BH flats / Brentwood)
-  var FLATS = [
-    { x0: -118.457, x1: -118.433, y0: 34.036, y1: 34.058, rot: 0 },   // Westwood south
-    { x0: -118.415, x1: -118.384, y0: 34.052, y1: 34.078, rot: -24 }, // BH flats (angled grid)
-    { x0: -118.497, x1: -118.462, y0: 34.036, y1: 34.056, rot: 12 }   // Brentwood
-  ];
-  FLATS.forEach(function (f) {
-    var g = el("g", { transform: "rotate(" + f.rot + " " + X((f.x0 + f.x1) / 2) + " " + Y((f.y0 + f.y1) / 2) + ")", opacity: 0.75 }, lyBlocks);
-    for (var lon = f.x0; lon < f.x1; lon += 0.004) for (var lat = f.y0; lat < f.y1; lat += 0.0033) {
-      if (R() < 0.18) continue;
-      var w = 0.0032 * KX * (0.72 + R() * 0.2), h2 = 0.0026 * KY * (0.72 + R() * 0.2);
-      el("rect", { x: X(lon), y: Y(lat) - h2, width: w, height: h2, rx: 2, fill: R() < 0.5 ? COL.block : COL.hill, stroke: COL.bedge, "stroke-width": 0.4, "vector-effect": "non-scaling-stroke" }, g);
-    }
+  // Reservoirs (real polygons)
+  D.water.forEach(function (w) {
+    el("path", { d: ringD(w.pts), fill: COL.water, stroke: COL.wedge, "stroke-width": 1.2, "vector-effect": "non-scaling-stroke" }, lyWater);
   });
 
-  // Campus
-  el("path", { d: poly(CAMPUS.pts), fill: COL.block, stroke: COL.bedge, "stroke-width": 1, "vector-effect": "non-scaling-stroke", "fill-opacity": 0.9 }, lyBlocks);
+  // Roads — one merged path per class; casing pass, then fill pass (Apple-Maps layering)
+  var CASE = { 9: [COL.fcase, 9], 1: [COL.acase, 6.5], 2: [COL.rcase, 5], 3: [COL.rcase, 3.4], 4: [COL.rcase, 2.4] };
+  var FILL = { 9: [COL.fwy, 6.5], 1: [COL.art, 4.6], 2: [COL.art, 3.3], 3: [COL.road, 2.1], 4: [COL.road, 1.5] };
+  var ORDER = [4, 3, 2, 1, 9], merged = {};
+  ORDER.forEach(function (t) { var d = ""; for (var i = 0; i < D.roads.length; i++) if (D.roads[i].t === t) d += D.roads[i].d + " "; merged[t] = d; });
+  ORDER.forEach(function (t) { if (!merged[t]) return; var c = CASE[t]; el("path", { d: merged[t], fill: "none", stroke: c[0], "stroke-width": c[1], "stroke-linecap": "round", "stroke-linejoin": "round", "vector-effect": "non-scaling-stroke" }, lyCase); });
+  ORDER.forEach(function (t) { if (!merged[t]) return; var f = FILL[t]; el("path", { d: merged[t], fill: "none", stroke: f[0], "stroke-width": f[1], "stroke-linecap": "round", "stroke-linejoin": "round", "vector-effect": "non-scaling-stroke" }, lyFill); });
 
-  // Greens + trees
-  GREENS.forEach(function (gr) {
-    el("path", { d: poly(gr.pts), fill: COL.park, stroke: COL.pedge, "stroke-width": 1, "vector-effect": "non-scaling-stroke" }, lyGreen);
-    var xs = gr.pts.map(function (p) { return X(p[0]); }), ys = gr.pts.map(function (p) { return Y(p[1]); });
-    var x0 = Math.min.apply(0, xs), x1 = Math.max.apply(0, xs), y0 = Math.min.apply(0, ys), y1 = Math.max.apply(0, ys);
-    for (var t = 0; t < 46; t++) {
-      var tx = x0 + R() * (x1 - x0), ty = y0 + R() * (y1 - y0);
-      el("circle", { cx: tx, cy: ty, r: 2.4 + R() * 2.4, fill: R() < 0.5 ? COL.tree : COL.tree2, opacity: 0.7 }, lyTrees);
-    }
-  });
-  // Canyon tree scatter (north of Sunset)
-  for (var t2 = 0; t2 < 420; t2++) {
-    var lon = LON0 + R() * (LON1 - LON0), lat = 34.082 + R() * (LAT1 - 34.082);
-    el("circle", { cx: X(lon), cy: Y(lat), r: 1.6 + R() * 2.2, fill: R() < 0.5 ? COL.tree : COL.tree2, opacity: 0.28 }, lyTrees);
-  }
-
-  WATERS.forEach(function (w) {
-    el("path", { d: poly(w.pts), fill: COL.water, stroke: COL.wedge, "stroke-width": 1.2, "vector-effect": "non-scaling-stroke" }, lyWater);
+  // Road labels (rotated along the street)
+  D.labels.forEach(function (L) {
+    var art = L.t <= 1, size = L.t <= 1 ? 12 : (L.t === 2 ? 11 : 9.5);
+    el("text", { x: L.x, y: L.y, "text-anchor": "middle", "font-size": size, "font-weight": art ? 600 : 500, fill: art ? COL.stArt : COL.st, transform: "rotate(" + L.a + " " + L.x + " " + L.y + ")", style: "paint-order:stroke;stroke:" + COL.land + ";stroke-width:3px;stroke-linejoin:round" }, lyStreet).textContent = L.n;
   });
 
-  // Roads
-  function roadPath(pts) {
-    var d = "M" + X(pts[0][0]).toFixed(1) + " " + Y(pts[0][1]).toFixed(1);
-    for (var i = 1; i < pts.length; i++) {
-      var prev = pts[i - 1], cur = pts[i];
-      var mx = (X(prev[0]) + X(cur[0])) / 2, my = (Y(prev[1]) + Y(cur[1])) / 2;
-      d += " Q" + X(prev[0]).toFixed(1) + " " + Y(prev[1]).toFixed(1) + " " + mx.toFixed(1) + " " + my.toFixed(1);
-    }
-    d += " T" + X(pts[pts.length - 1][0]).toFixed(1) + " " + Y(pts[pts.length - 1][1]).toFixed(1);
-    return d;
-  }
-  function widths(t) { return t === 9 ? [11, 8] : t === 1 ? [7.5, 5.6] : t === 2 ? [5.4, 3.8] : [3.2, 2.1]; }
-  ROADS.forEach(function (r) {
-    var d = roadPath(r.pts), w = widths(r.t);
-    el("path", { d: d, fill: "none", stroke: r.t === 9 ? COL.fcase : (r.t === 1 ? COL.acase : COL.rcase), "stroke-width": w[0], "stroke-linecap": "round", "vector-effect": "non-scaling-stroke" }, lyCase);
-    el("path", { d: d, fill: "none", stroke: r.t === 9 ? COL.fwy : (r.t === 1 ? COL.art : COL.road), "stroke-width": w[1], "stroke-linecap": "round", "vector-effect": "non-scaling-stroke" }, lyFill);
+  // Golf-course names — once per course, at its largest polygon
+  var courseSeen = {};
+  G.courses.forEach(function (c) {
+    if (!c.n) return;
+    var bb = bbox(c.pts), a = (bb[2] - bb[0]) * (bb[3] - bb[1]);
+    if (!courseSeen[c.n] || a > courseSeen[c.n].a) courseSeen[c.n] = { a: a, x: (bb[0] + bb[2]) / 2, y: (bb[1] + bb[3]) / 2 };
   });
-
-  // Labels
-  ROADS.forEach(function (r) {
-    if (!r.lbl) return;
-    var art = r.t === 1 || r.t === 9;
-    el("text", {
-      x: X(r.lbl[0]), y: Y(r.lbl[1]), "text-anchor": "middle",
-      "font-size": art ? 12 : 10, "font-weight": art ? 600 : 500,
-      fill: art ? COL.stArt : COL.st,
-      transform: "rotate(" + (r.lbl[2] || 0) + " " + X(r.lbl[0]) + " " + Y(r.lbl[1]) + ")",
-      style: "paint-order:stroke;stroke:" + COL.land + ";stroke-width:3px;stroke-linejoin:round"
-    }, lyStreet).textContent = r.n;
+  Object.keys(courseSeen).forEach(function (n) {
+    var s = courseSeen[n];
+    el("text", { x: s.x, y: s.y, "text-anchor": "middle", "font-size": 9.5, fill: "#4E6739", "font-weight": 600, style: "paint-order:stroke;stroke:" + GC.base + ";stroke-width:3.5px;stroke-linejoin:round" }, lyStreet).textContent = n;
   });
-  GREENS.forEach(function (gr) {
-    var xs = gr.pts.map(function (p) { return X(p[0]); }), ys = gr.pts.map(function (p) { return Y(p[1]); });
-    el("text", { x: (Math.min.apply(0, xs) + Math.max.apply(0, xs)) / 2, y: (Math.min.apply(0, ys) + Math.max.apply(0, ys)) / 2, "text-anchor": "middle", "font-size": 9.5, fill: "#5E7048", "font-weight": 600, style: "paint-order:stroke;stroke:" + COL.park + ";stroke-width:3px" }, lyStreet).textContent = gr.n;
-  });
-  el("text", { x: X(-118.4455), y: Y(34.0685), "text-anchor": "middle", "font-size": 11, fill: "#6E6455", "font-weight": 600, "letter-spacing": "1px", style: "paint-order:stroke;stroke:" + COL.block + ";stroke-width:3px" }, lyStreet).textContent = "UCLA";
-  el("text", { x: X(-118.451), y: Y(34.1015), "text-anchor": "middle", "font-size": 9, fill: "#7A8F96", "font-weight": 500, style: "paint-order:stroke;stroke:" + COL.water + ";stroke-width:2.5px" }, lyStreet).textContent = "Stone Canyon Reservoir";
-  HOODS.forEach(function (h) {
+  D.water.forEach(function (w) {
+    if (!w.n) return;
+    var bb = bbox(w.pts);
+    el("text", { x: (bb[0] + bb[2]) / 2, y: (bb[1] + bb[3]) / 2, "text-anchor": "middle", "font-size": 8.5, fill: "#5E7C86", "font-weight": 500, style: "paint-order:stroke;stroke:" + COL.water + ";stroke-width:2.5px" }, lyStreet).textContent = w.n;
+  });  HOODS.forEach(function (h) {
     el("text", { x: X(h[1]), y: Y(h[2]), "text-anchor": "middle", "font-size": 14, fill: COL.hood, "font-weight": 600, "letter-spacing": "2.5px", opacity: 0.66, style: "paint-order:stroke;stroke:" + COL.land + ";stroke-width:3.5px" }, lyHood).textContent = h[0];
+  });
+
+  // Cultural landmarks — a small hollow marker + quiet label
+  LANDMARKS.forEach(function (m) {
+    var x = X(m.lon), y = Y(m.lat);
+    el("circle", { cx: x, cy: y, r: 3, fill: "none", stroke: COL.st, "stroke-width": 1.4, "vector-effect": "non-scaling-stroke" }, lyStreet);
+    el("circle", { cx: x, cy: y, r: 0.8, fill: COL.st }, lyStreet);
+    el("text", { x: x + 6, y: y + 3.5, "font-size": 9, fill: COL.stArt, "font-weight": 500, "font-style": "italic", style: "paint-order:stroke;stroke:" + COL.land + ";stroke-width:3px;stroke-linejoin:round" }, lyStreet).textContent = m.n;
   });
 
   /* ---- Pins ---- */
