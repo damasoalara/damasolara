@@ -408,10 +408,10 @@ h1, h2, h3 {
   border-radius: var(--radius);
   background: var(--olive);
   color: #fff;
-  padding: clamp(4rem, 9vw, 7rem) var(--gutter);
+  padding: clamp(4rem, 9vw, 7rem) clamp(1.5rem, 5vw, 4rem);
 }
 .news__inner {
-  max-width: 40rem;
+  max-width: 84rem;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -420,14 +420,13 @@ h1, h2, h3 {
   gap: 1.4rem;
 }
 .news h2 { font-size: clamp(2.2rem, 5vw, 4rem); }
-.news p { opacity: 0.75; font-size: 1.1rem; }
+.news p { opacity: 0.75; font-size: 1.1rem; max-width: 44rem; }
 .news__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  gap: clamp(10px, 1.4vw, 18px);
   width: 100%;
-  max-width: 62rem;
-  margin: 0.6rem 0;
+  margin: 0.9rem 0 0.4rem;
   text-align: left;
 }
 .newscard {
@@ -764,7 +763,6 @@ h1, h2, h3 {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
-  .news__cards { grid-template-columns: 1fr; }
   .mrow { grid-template-columns: 3rem 1fr; }
   .mrow p { grid-column: 2; }
   .folio__grid { grid-template-columns: repeat(2, 1fr); }
@@ -773,6 +771,13 @@ h1, h2, h3 {
   .about__grid { grid-template-columns: 1fr; }
   .about__photo { max-width: 420px; }
   .statement__giant { white-space: normal; }
+}
+
+/* Newsletter: stack to full-width text-only cards on phones */
+@media (max-width: 720px) {
+  .news__cards { grid-template-columns: 1fr; gap: 12px; }
+  .newscard__img { display: none; }
+  .newscard { padding: 1.2rem 1.3rem; }
 }
 
 @media (max-width: 760px) {
