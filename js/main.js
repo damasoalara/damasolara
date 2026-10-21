@@ -172,12 +172,16 @@
     "9604-heather": [["images/9604-heather.jpg","9604 Heather Rd"]],
     "15415-milldale": [["images/15415-milldale.jpg","15415 Milldale Dr"],["images/g/15415-milldale-01.jpg",""],["images/g/15415-milldale-02.jpg",""],["images/g/15415-milldale-03.jpg",""]],
         "146-groverton": [["images/146-groverton-bacc.jpg","Bel-Air Country Club fairways below the estates of Bel Air"],["images/g/146-groverton-04.jpg",""],["images/g/146-groverton-05.jpg",""],["images/g/146-groverton-06.jpg",""],["images/g/146-groverton-07.jpg",""],["images/g/146-groverton-08.jpg",""]],
+    "936-chantilly": [["images/936-chantilly.jpg","936 Chantilly Rd"],["images/g/936-chantilly-01.jpg",""],["images/g/936-chantilly-02.jpg",""]],
+    "10917-savona": [["images/10917-savona.jpg","10917 Savona Rd"]],
+    "248-glenroy": [["images/248-glenroy.jpg","248 N Glenroy Ave"],["images/g/248-glenroy-01.jpg",""],["images/g/248-glenroy-02.jpg",""],["images/g/248-glenroy-03.jpg",""],["images/g/248-glenroy-04.jpg",""]],
     "6020-lido": [["images/6020-lido.jpg","6020 Lido Ln"],["images/g/6020-lido-01.jpg",""],["images/g/6020-lido-02.jpg",""],["images/g/6020-lido-03.jpg",""]]
   };
   var LB_TITLES = {
     "879":"879 Linda Flora","903":"903 Linda Flora","1149-lindaflora":"1149 Linda Flora Dr",
     "10814-savona":"10814 Savona Rd","1132-chantilly":"1132 Chantilly Rd","14367-mulholland":"14367 Mulholland Dr",
-    "9604-heather":"9604 Heather Rd","15415-milldale":"15415 Milldale Dr","146-groverton":"146 Groverton Pl","6020-lido":"6020 Lido Ln"
+    "9604-heather":"9604 Heather Rd","15415-milldale":"15415 Milldale Dr","146-groverton":"146 Groverton Pl","6020-lido":"6020 Lido Ln",
+    "936-chantilly":"936 Chantilly Rd","10917-savona":"10917 Savona Rd","248-glenroy":"248 N Glenroy Ave"
   };
   var lb = document.getElementById("lb");
   var lbImg = document.getElementById("lbImg");

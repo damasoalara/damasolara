@@ -53,11 +53,16 @@ video/903-sold.mp4: compressed vertical "Sold" reel (muted, autoplays in view)
   GALLERIES in js/main.js; extra photos live in images/g/.
 - Substack cards: three placeholders marked PLACEHOLDER-SUBSTACK in
   index.html: swap title + URL per card when Damaso publishes.
-- Work also has a portfolio grid ("Also on the record"): 8 addresses with a
-  lead photo from the Google Drive archive + 3 typographic cards for
-  addresses without photography yet (642 Perugia, 936 Chantilly,
-  10917 Savona). Property statuses on map/grid are provisional: confirm
-  Sold vs Represented per address with Damaso.
+- Work also has a portfolio grid ("Also on the record"): **3x3, nine photo cards**, newest
+  first (936 Chantilly, 10917 Savona, 248 N Glenroy added 2026-10-21 from the shared Drive
+  folder "Ivan/Damaso - Marketing"). Below it, a native `<details>` "See all N addresses" list
+  holds every address, including ones without a photo card (642 Perugia, 146 Groverton,
+  6020 Lido). On phones the grid is 2 columns and card 9 is hidden so rows stay even; it is
+  still in the list. To add a property: lead photo to images/, extras to images/g/, an entry in
+  GALLERIES + LB_TITLES (js/main.js), a row in the list, and update the count in the summary.
+  Statuses are provisional: confirm Sold vs Represented per address with Damaso.
+- **Verify by looking:** serve locally (`python3 -m http.server`), open the grid at desktop and
+  375px, open "See all", click a row and confirm its gallery opens. Toggle ES.
 - Fonts load from Google Fonts (Schibsted Grotesk). To self-host later, download
   the woff2 files and swap the `<link>` for `@font-face` rules.
 

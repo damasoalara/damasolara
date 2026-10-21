@@ -506,7 +506,7 @@ h1, h2, h3 {
 }
 .folio__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 .folio__card { display: block; }
@@ -517,7 +517,8 @@ h1, h2, h3 {
 }
 .folio__card img {
   width: 100%;
-  height: clamp(160px, 22vh, 230px);
+  aspect-ratio: 3 / 2;
+  height: auto;
   object-fit: cover;
   transition: transform 0.8s var(--ease);
 }
@@ -535,6 +536,38 @@ h1, h2, h3 {
   transition: background 0.3s;
 }
 .folio__card--text:hover { background: var(--cream-2); }
+
+/* "See all": every address as a quiet list, closed by default */
+.folio__all { margin-top: 1.75rem; }
+.folio__all summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  transition: background 0.3s, color 0.3s;
+}
+.folio__all summary::-webkit-details-marker { display: none; }
+.folio__all summary:hover { background: var(--ink, #192231); color: var(--paper, #F4F4F4); }
+.folio__all summary:focus-visible { outline: 2px solid var(--gold, #C0B283); outline-offset: 3px; }
+.folio__less, .folio__all[open] .folio__more { display: none; }
+.folio__all[open] .folio__less { display: inline; }
+.folio__list { list-style: none; margin: 1.25rem 0 0; padding: 0; border-top: 1px solid rgba(25, 34, 49, 0.14); }
+.folio__list li { border-bottom: 1px solid rgba(25, 34, 49, 0.14); }
+.folio__list a, .folio__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.95rem 0.25rem;
+}
+.folio__list a { transition: padding 0.3s var(--ease); }
+.folio__list a:hover { padding-left: 0.75rem; }
+.folio__addr { font-size: 1.1rem; letter-spacing: -0.03em; }
+.folio__meta { color: var(--grey); font-size: 0.9rem; text-align: right; }
 
 /* ---------- The Westside, mapped ---------- */
 
@@ -766,6 +799,7 @@ h1, h2, h3 {
   .mrow { grid-template-columns: 3rem 1fr; }
   .mrow p { grid-column: 2; }
   .folio__grid { grid-template-columns: repeat(2, 1fr); }
+  .folio__card:nth-child(9) { display: none; } /* 2 columns: keep rows even; it stays in the full list */
   .wsmap__body { grid-template-columns: 1fr; }
   .wsmap__panel { max-height: 300px; }
   .about__grid { grid-template-columns: 1fr; }
