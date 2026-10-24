@@ -1,3 +1,19 @@
+# Cloudflare prepends its managed AI-training block above this file.
+# The private brandscript is disallowed for every crawler. AI search, assistant and the
+# major search crawlers are named explicitly so the rule never depends on merging groups.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: YouBot
+User-agent: Applebot
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Bingbot
 User-agent: *
 Allow: /
 Disallow: /brandscript/
