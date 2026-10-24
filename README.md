@@ -81,3 +81,20 @@ video/903-sold.mp4: compressed vertical "Sold" reel (muted, autoplays in view)
 - Open Graph + Twitter card meta in <head>; share title is prefixed
   "Damaso Lara | ". Preview image is images/og-cover.jpg (1200×630).
   All absolute URLs assume the production domain damasolara.com.
+
+
+## /brandscript (private, added 2026-10-23)
+Damaso's brandscript, behind a password. **The content is encrypted, not hidden.** `brandscript/index.html`
+holds only ciphertext (AES-GCM, key from PBKDF2-SHA256, 600,000 rounds, random salt). The password is not
+stored anywhere, not even as a hash: the only way to read the page is to decrypt it. `brandscript-a.js`
+derives the key in the browser, decrypts, and runs the page. "Remember this device" keeps the derived key in
+localStorage. Works under the site's strict CSP (no inline scripts; the payload is a non-executable JSON block).
+- **Never commit the plaintext.** The repo root is the published site. The readable source and the encrypt
+  script live outside the repo, in Ivan's `Damaso Lara/Substack/brandscript-build/`.
+- **To update the text:** edit `body.html` there, run `BS_PASS='...' node encrypt.mjs`, and paste the new
+  payload into `brandscript/index.html`. If the JS changes, rename it (`brandscript-b.js`) so caches don't
+  serve the old one.
+- **To change the password:** re-encrypt with the new one. The old password stops working right away, and
+  anyone who chose "Remember this device" gets the password screen again.
+- Kept out of search by `noindex` meta and `X-Robots-Tag` in `_headers`. It is deliberately **not** in
+  robots.txt or the sitemap, and nothing links to it.
