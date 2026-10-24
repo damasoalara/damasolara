@@ -96,5 +96,8 @@ localStorage. Works under the site's strict CSP (no inline scripts; the payload 
   serve the old one.
 - **To change the password:** re-encrypt with the new one. The old password stops working right away, and
   anyone who chose "Remember this device" gets the password screen again.
-- Kept out of search by `noindex` meta and `X-Robots-Tag` in `_headers`. It is deliberately **not** in
-  robots.txt or the sitemap, and nothing links to it.
+- **Bots, AI included (2026-10-23, Ivan's ask):** robots.txt disallows `/brandscript/` and `/images/brandscript/`
+  for every crawler. The page and its photos send `noindex, nofollow, noarchive, nosnippet, noimageindex,
+  notranslate, noai, noimageai` (meta and `X-Robots-Tag`) plus `Cache-Control: private, no-store`. Not in the
+  sitemap, nothing links to it. All of that is honor-system. **The encryption is the real guarantee:** a bot
+  that ignores every rule still only gets ciphertext.

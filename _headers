@@ -14,10 +14,11 @@
 /video/*
   Cache-Control: public, max-age=86400, must-revalidate
 
-# Private brandscript: encrypted page, keep it and its photos out of search.
-# (Not listed in robots.txt on purpose: a Disallow line would publish the path.)
+# Private brandscript: encrypted page. Keep it and its photos out of search, AI and archives.
+# robots.txt also disallows both paths (the page is encrypted, so naming the path reveals nothing).
 /brandscript/*
-  X-Robots-Tag: noindex, nofollow, noarchive, noimageindex
-  Cache-Control: no-cache
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
+  Cache-Control: private, no-store
 /images/brandscript/*
-  X-Robots-Tag: noindex, noimageindex
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
+  Cache-Control: private, no-store

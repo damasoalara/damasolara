@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /brandscript/
+Disallow: /images/brandscript/
 
 Sitemap: https://damasolara.com/sitemap.xml
