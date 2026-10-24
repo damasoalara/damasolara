@@ -167,6 +167,8 @@
     var label = cur ? "<b>" + cur.getAttribute("data-n") + "</b>" + cur.getAttribute("data-t") : "<b>00</b>Brandscript";
     var past = document.querySelector(".voice").getBoundingClientRect().top < vh * 0.4;
     if (past) label = "<b>&middot;</b>How we sound";
+    if (document.querySelector(".rules-dark").getBoundingClientRect().top < vh * 0.4) label = "<b>&middot;</b>The discretion rules";
+    if (document.querySelector(".look").getBoundingClientRect().top < vh * 0.4) label = "<b>&middot;</b>How we look";
     if (document.querySelector(".pillars").getBoundingClientRect().top < vh * 0.4) label = "<b>&middot;</b>Pillars";
     if (document.querySelector(".next").getBoundingClientRect().top < vh * 0.4) label = "<b>&middot;</b>What I need from you";
     if (label !== last) { barChap.innerHTML = label; last = label; }

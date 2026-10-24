@@ -83,6 +83,11 @@ video/903-sold.mp4: compressed vertical "Sold" reel (muted, autoplays in view)
   All absolute URLs assume the production domain damasolara.com.
 
 
+## Cloudflare analytics beacon
+`/` and `/index.html` send `Cache-Control: ... no-transform` so Cloudflare's edge doesn't inject its Web
+Analytics script, which the CSP blocks (and logs an error for) on every page. Don't loosen the CSP to
+allow it.
+
 ## /brandscript (private, added 2026-10-23)
 Damaso's brandscript, behind a password. **The content is encrypted, not hidden.** `brandscript/index.html`
 holds only ciphertext (AES-GCM, key from PBKDF2-SHA256, 600,000 rounds, random salt). The password is not
@@ -91,9 +96,9 @@ derives the key in the browser, decrypts, and runs the page. "Remember this devi
 localStorage. Works under the site's strict CSP (no inline scripts; the payload is a non-executable JSON block).
 - **Never commit the plaintext.** The repo root is the published site. The readable source and the encrypt
   script live outside the repo, in Ivan's `Damaso Lara/Substack/brandscript-build/`.
-- **To update the text:** edit `body.html` there, run `BS_PASS='...' node encrypt.mjs`, and paste the new
-  payload into `brandscript/index.html`. If the JS changes, rename it (`brandscript-b.js`) so caches don't
-  serve the old one.
+- **To update the text:** edit `body.html` (or `style.css` / `init.js`) there, then run
+  `BS_PASS='...' python3 build.py <this repo> <next letter>`. It rebuilds `brandscript/index.html` and
+  `brandscript/brandscript-<letter>.js`. Delete the old JS file. **Draft 02 (2026-10-23) is `-b`.**
 - **To change the password:** re-encrypt with the new one. The old password stops working right away, and
   anyone who chose "Remember this device" gets the password screen again.
 - **Bots, AI included (2026-10-23, Ivan's ask):** robots.txt disallows `/brandscript/` and `/images/brandscript/`

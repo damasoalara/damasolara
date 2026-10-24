@@ -7,6 +7,13 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data:; media-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; upgrade-insecure-requests
 
+# HTML: no-transform stops Cloudflare's edge from injecting its Web Analytics beacon, which the
+# CSP (rightly) blocks and logs as an error on every page. Fix the injection, never loosen the CSP.
+/
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+
 # Media filenames are not content-hashed, so photos can be swapped in place.
 # Cache briefly, then revalidate (ETag) so replacements go live without a rename.
 /images/*
@@ -18,7 +25,7 @@
 # robots.txt also disallows both paths (the page is encrypted, so naming the path reveals nothing).
 /brandscript/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
-  Cache-Control: private, no-store
+  Cache-Control: private, no-store, no-transform
 /images/brandscript/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
   Cache-Control: private, no-store
