@@ -98,7 +98,7 @@ localStorage. Works under the site's strict CSP (no inline scripts; the payload 
   script live outside the repo, in Ivan's `Damaso Lara/Substack/brandscript-build/`.
 - **To update the text:** edit `body.html` (or `style.css` / `init.js`) there, then run
   `BS_PASS='...' python3 build.py <this repo> <next letter>`. It rebuilds `brandscript/index.html` and
-  `brandscript/brandscript-<letter>.js`. Delete the old JS file. **Draft 02 (2026-10-23) is `-b`.**
+  `brandscript/brandscript-<letter>.js`. Delete the old JS file. **Draft 03 (2026-10-24) is `-c`.**
 - **To change the password:** re-encrypt with the new one. The old password stops working right away, and
   anyone who chose "Remember this device" gets the password screen again.
 - **Bots, AI included (2026-10-23, Ivan's ask):** robots.txt disallows `/brandscript/` and `/images/brandscript/`
