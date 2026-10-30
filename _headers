@@ -29,3 +29,8 @@
 /images/brandscript/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
   Cache-Control: private, no-store
+
+# Private content calendar: encrypted the same way as the brandscript.
+/calendar/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
+  Cache-Control: private, no-store, no-transform

@@ -106,3 +106,16 @@ localStorage. Works under the site's strict CSP (no inline scripts; the payload 
   notranslate, noai, noimageai` (meta and `X-Robots-Tag`) plus `Cache-Control: private, no-store`. Not in the
   sitemap, nothing links to it. All of that is honor-system. **The encryption is the real guarantee:** a bot
   that ignores every rule still only gets ciphertext.
+
+
+## /calendar (private, added 2026-10-29)
+Damaso's content calendar for November and December: a Substack article every Wednesday at 9am,
+an Instagram post that carries it every Friday, On the Record posts in between. Adapted from Drew's
+(`~/Code/davis-group`), which was adapted from Jo's. **Encrypted like /brandscript, same password**,
+built with the `protected-page` skill. The data (`data.json`), page, styles and app are all inside the
+ciphertext; only the gate JS and fonts are public.
+- **Source lives outside this repo** in Ivan's `Damaso Lara/Substack/calendar-build/`. Edit `data.json`
+  (or `shell.html`, `style.css`, `app.js`), then `PP_PASS='...' python3 build.py <this repo> <next letter>`,
+  and delete the old `calendar/gate-<letter>.js`. **Current: `-c`.**
+- `[Damaso: ...]` in a caption or slide renders as an amber ask. Photos come from `/images/` (already public).
+- Verify at 375 and 1440: unlock, open an article, an Instagram post (swipe the slides), and the plan.
