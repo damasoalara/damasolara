@@ -110,7 +110,7 @@
   var items = DATA.items.slice().sort(function(a, b){ return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
   var DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
   var KIND = { ig:"Instagram", substack:"Substack", plan:"The plan" };
-  var IVAN_SMS = "+13107746584";
+  var IVAN_SMS = DATA.sms || "";  // lives in the encrypted data, never in this public file
   function ymd(d){ return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); }
   function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
   function longDate(s){ return new Date(s + "T12:00:00").toLocaleDateString("en-US", { weekday:"long", month:"long", day:"numeric" }); }

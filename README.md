@@ -116,6 +116,6 @@ built with the `protected-page` skill. The data (`data.json`), page, styles and 
 ciphertext; only the gate JS and fonts are public.
 - **Source lives outside this repo** in Ivan's `Damaso Lara/Substack/calendar-build/`. Edit `data.json`
   (or `shell.html`, `style.css`, `app.js`), then `PP_PASS='...' python3 build.py <this repo> <next letter>`,
-  and delete the old `calendar/gate-<letter>.js`. **Current: `-c`.**
+  and delete the old `calendar/gate-<letter>.js`. **Current: `-d`.** Page scripts land in the public gate JS, so private values (like Ivan's number) live in `data.json`.
 - `[Damaso: ...]` in a caption or slide renders as an amber ask. Photos come from `/images/` (already public).
 - Verify at 375 and 1440: unlock, open an article, an Instagram post (swipe the slides), and the plan.
