@@ -6,7 +6,7 @@
   /* The page's own <head> scripts, moved here so the page runs under script-src 'self'. */
 
 
-  var KEY_STORE = "dl-calendar-key-v1";
+  var KEY_STORE = "dl-os-key-v1";
   var TITLE = "Damaso Lara · Content calendar";
   var EXTERNAL = [];
 

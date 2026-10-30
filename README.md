@@ -98,7 +98,7 @@ localStorage. Works under the site's strict CSP (no inline scripts; the payload 
   script live outside the repo, in Ivan's `Damaso Lara/Substack/brandscript-build/`.
 - **To update the text:** edit `body.html` (or `style.css` / `init.js`) there, then run
   `BS_PASS='...' python3 build.py <this repo> <next letter>`. It rebuilds `brandscript/index.html` and
-  `brandscript/brandscript-<letter>.js`. Delete the old JS file. **Draft 03 (2026-10-24) is `-c`.**
+  `brandscript/brandscript-<letter>.js`. Delete the old JS file. **Current: `-d` (2026-10-29, folio tabs).**
 - **To change the password:** re-encrypt with the new one. The old password stops working right away, and
   anyone who chose "Remember this device" gets the password screen again.
 - **Bots, AI included (2026-10-23, Ivan's ask):** robots.txt disallows `/brandscript/` and `/images/brandscript/`
@@ -116,6 +116,15 @@ built with the `protected-page` skill. The data (`data.json`), page, styles and 
 ciphertext; only the gate JS and fonts are public.
 - **Source lives outside this repo** in Ivan's `Damaso Lara/Substack/calendar-build/`. Edit `data.json`
   (or `shell.html`, `style.css`, `app.js`), then `PP_PASS='...' python3 build.py <this repo> <next letter>`,
-  and delete the old `calendar/gate-<letter>.js`. **Current: `-d`.** Page scripts land in the public gate JS, so private values (like Ivan's number) live in `data.json`.
+  and delete the old `calendar/gate-<letter>.js`. **Current: `-e`.** Page scripts land in the public gate JS, so private values (like Ivan's number) live in `data.json`.
 - `[Damaso: ...]` in a caption or slide renders as an amber ask. Photos come from `/images/` (already public).
 - Verify at 375 and 1440: unlock, open an article, an Instagram post (swipe the slides), and the plan.
+
+
+## One unlock, folio tabs (2026-10-29)
+/brandscript and /calendar are one private workspace for Damaso and Ivan. Folio tabs across the top of
+both switch between them. **Both are encrypted with the same password and the same salt** (`os-salt.txt`
+in Ivan's `Damaso Lara/Substack/`, a public value) and share the remember-device key `dl-os-key-v1`, so
+unlocking either page opens both. Each encryption still gets its own random IV. Any new private page here
+must be built with the same `PP_SALT` and `--key-store dl-os-key-v1`, and get a tab on every page.
+Current builds: brandscript `-d`, calendar `-e`.

@@ -7,7 +7,7 @@
   html.classList.add("js");
   try { if (matchMedia("(prefers-reduced-motion: reduce)").matches) html.classList.add("rm"); } catch (e) {}
 
-  var KEY_STORE = "dl-brandscript-key-v1";
+  var KEY_STORE = "dl-os-key-v1";
   function b64(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
 
   function payload() {
