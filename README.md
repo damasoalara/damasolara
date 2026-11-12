@@ -128,3 +128,19 @@ in Ivan's `Damaso Lara/Substack/`, a public value) and share the remember-device
 unlocking either page opens both. Each encryption still gets its own random IV. Any new private page here
 must be built with the same `PP_SALT` and `--key-store dl-os-key-v1`, and get a tab on every page.
 Current builds: brandscript `-d`, calendar `-e`.
+
+
+## DamasoOS (/os/, 2026-11-11)
+The private side of this site is now **DamasoOS**: the same Mac-app shell as Ivan's other client OSes
+(sidebar, one panel, Auto/Light/Dark, a tab bar on phone), in Damaso's palette. Calendar (any month, with
+article and Instagram views), Articles (every Substack piece, published and coming), and the brandscript,
+framed in the panel. **Encrypted with the brandscript's password, salt, and key (`dl-os-key-v1`)**, so one
+unlock opens everything. `/calendar/` now redirects to `/os/#calendar`, and `/brandscript/` opened on its own
+forwards to `/os/#brandscript`.
+- **Source lives outside this repo:** `Damaso Lara/DamasoOS/` (shell.html, data.json, assets/). Edit, then
+  `PP_PASS='...' python3 build.py <this repo> <gate letter> <assets letter>`; bump a letter when its files
+  change and delete the old ones. **Current: gate `a`, assets `a`; brandscript `-e`.**
+- `os/assets/*` are public (code and styles only, no names or words). Everything else is in the ciphertext.
+- `_headers` lets `/brandscript/*` (only) be framed by this origin: it detaches the site-wide
+  `X-Frame-Options: DENY` and `frame-ancestors 'none'` with `!` and sets SAMEORIGIN / `'self'`.
+- Verify at 375 and 1440, light and dark: unlock, a month, an article, a post, Articles, Brandscript.

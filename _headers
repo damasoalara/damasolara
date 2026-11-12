@@ -26,11 +26,21 @@
 /brandscript/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
   Cache-Control: private, no-store, no-transform
+  ! X-Frame-Options
+  ! Content-Security-Policy
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data:; media-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; upgrade-insecure-requests
 /images/brandscript/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
   Cache-Control: private, no-store
 
 # Private content calendar: encrypted the same way as the brandscript.
 /calendar/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
+  Cache-Control: private, no-store, no-transform
+
+# DamasoOS: the shell for Damaso and Iván's work, encrypted with the brandscript's key. It frames
+# /brandscript/, which is why that path alone allows same-origin framing above.
+/os/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
   Cache-Control: private, no-store, no-transform

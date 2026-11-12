@@ -19,5 +19,6 @@ Allow: /
 Disallow: /brandscript/
 Disallow: /images/brandscript/
 Disallow: /calendar/
+Disallow: /os/
 
 Sitemap: https://damasolara.com/sitemap.xml

@@ -3,6 +3,11 @@
    to derive the right key and decrypt. A wrong password simply fails to decrypt.
    "Remember this device" keeps the derived key (not the password) in this browser only. */
 (function () {
+  /* DamasoOS is home. Opened on its own, the brandscript forwards into the OS, which frames it.
+     Framed, it drops its old folio tabs (the OS sidebar does that job). */
+  var framed = false; try { framed = window.top !== window.self; } catch (e) { framed = true; }
+  if (!framed) { location.replace("/os/#brandscript"); return; }
+  document.documentElement.classList.add("framed");
   var html = document.documentElement;
   html.classList.add("js");
   try { if (matchMedia("(prefers-reduced-motion: reduce)").matches) html.classList.add("rm"); } catch (e) {}
