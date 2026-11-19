@@ -44,3 +44,10 @@
 /os/*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai
   Cache-Control: private, no-store, no-transform
+
+# DamasoOS calendar feed. Google Calendar subscribes to it by URL, so it can't be behind the password:
+# the file name is a random token, and it holds titles, dates, and links only. Not in robots.txt on purpose.
+/cal/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noai
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/calendar; charset=utf-8

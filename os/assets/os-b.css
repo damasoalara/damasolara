@@ -326,3 +326,11 @@ a.rowline:hover { background: var(--fill); }
 /* The password wrapper must not break the sidebar-and-panel grid. */
 #pp-root { display: contents; }
 .pill.warn { background: var(--ask-fill); color: var(--ask); }
+.pill.go { background: rgba(52,120,74,.16); color: #2F6B43; }
+:root[data-theme="dark"] .pill.go { color: #8FD3A5; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pill.go { color: #8FD3A5; } }
+.rowline.st-ready { box-shadow: inset 3px 0 0 #3E8A57; }
+.rowline.st-waiting, .rowline.st-draft { box-shadow: inset 3px 0 0 #D2A24A; }
+.article .waiting { margin-top: 14px; padding: 10px 12px; border-radius: 10px; background: var(--ask-fill); color: var(--ask); font-size: 14px; }
+/* On the phone tab bar the site link would run off the edge; it stays in the desktop sidebar. */
+@media (max-width: 820px) { #site-link { display: none; } }

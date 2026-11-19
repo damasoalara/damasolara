@@ -139,8 +139,15 @@ unlock opens everything. `/calendar/` now redirects to `/os/#calendar`, and `/br
 forwards to `/os/#brandscript`.
 - **Source lives outside this repo:** `Damaso Lara/DamasoOS/` (shell.html, data.json, assets/). Edit, then
   `PP_PASS='...' python3 build.py <this repo> <gate letter> <assets letter>`; bump a letter when its files
-  change and delete the old ones. **Current: gate `a`, assets `a`; brandscript `-e`.**
+  change and delete the old ones. **Current: gate `b`, assets `b`; brandscript `-e`.**
 - `os/assets/*` are public (code and styles only, no names or words). Everything else is in the ciphertext.
 - `_headers` lets `/brandscript/*` (only) be framed by this origin: it detaches the site-wide
   `X-Frame-Options: DENY` and `frame-ancestors 'none'` with `!` and sets SAMEORIGIN / `'self'`.
 - Verify at 375 and 1440, light and dark: unlock, a month, an article, a post, Articles, Brandscript.
+
+### Calendar feed (2026-11-19)
+`cal/<token>.ics` is DamasoOS as a calendar Damaso subscribes to in Google Calendar ("From URL"): one
+all-day event per article and Instagram post, each linking to `/os/#/<id>`. **It can't be behind the
+password** (Google fetches it with no login), so it carries titles, dates, and a status word only, never
+what a piece waits on or anyone's name, and its file name is a random token (`ics-token.txt` in the source
+folder). `build.py` regenerates it on every build. Google refreshes subscribed feeds every few hours to a day.

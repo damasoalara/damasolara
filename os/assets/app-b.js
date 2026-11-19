@@ -129,21 +129,26 @@
 
   /* ---------- articles: every Substack piece, published and planned ---------- */
   function shortDate(s){ return new Date(s + "T12:00:00").toLocaleDateString("en-US", { weekday:"short", month:"short", day:"numeric", year:"numeric" }); }
-  var PILL = { published:["ok","Published"], ready:["accent","Ready"], draft:["warn","Draft"], todo:["","To write"] };
+  var PILL = { published:["ok","Published"], ready:["go","Ready to post"], waiting:["warn","Waiting"], draft:["warn","Waiting"], todo:["","To write"] };
   function pill(st){ var p = PILL[st] || ["", st]; return '<span class="pill ' + p[0] + '">' + p[1] + '</span>'; }
   function band(title, aside, inner){ return '<div class="band"><h2>' + title + (aside ? '<span class="aside">' + aside + '</span>' : '') + '</h2>' + inner + '</div>'; }
+  function waitLine(it){ return it.waitingOn ? "On " + it.waitingOn + ": " + it.waitingFor : ""; }
   function articleRow(it){
-    return '<a href="#/' + esc(it.id) + '" class="rowline"><span class="primary">' + esc(it.no + " · " + it.title) + pill(it.status) + '</span><span class="secondary">' + esc(it.series + (it.sub ? " · " + it.sub : "")) + '</span><span class="when">' + esc(shortDate(it.date)) + '</span></a>';
+    var second = it.status === "published" ? it.series + (it.sub ? " · " + it.sub : "") : (waitLine(it) || it.series);
+    return '<a href="#/' + esc(it.id) + '" class="rowline st-' + esc(it.status) + '"><span class="primary">' + esc(it.no + " · " + it.title) + pill(it.status) + '</span><span class="secondary">' + esc(second) + '</span><span class="when">' + esc(shortDate(it.date)) + '</span></a>';
   }
   function showArticles(){
     setCurrent("articles"); main.classList.remove("doc");
     var arts = items.filter(function(i){ return i.type === "substack"; });
-    var out = arts.filter(function(i){ return i.status === "published"; }).reverse();
-    var next = arts.filter(function(i){ return i.status !== "published"; });
-    main.innerHTML = '<div class="page-head"><h1>Articles</h1><span class="count">' + out.length + ' published, ' + next.length + ' coming</span></div>' +
+    var by = function(st){ return arts.filter(function(i){ return st.indexOf(i.status) >= 0; }); };
+    var out = by(["published"]).reverse(), ready = by(["ready"]), wait = by(["waiting","draft"]), todo = by(["todo"]);
+    var list = function(a){ return a.length ? '<div class="rows">' + a.map(articleRow).join("") + '</div>' : ''; };
+    main.innerHTML = '<div class="page-head"><h1>Articles</h1><span class="count">' + out.length + ' published, ' + (arts.length - out.length) + ' coming</span></div>' +
       '<p class="page-note">' + esc(DATA.articlesNote || "") + '</p>' +
-      band("Coming", "", '<div class="rows">' + next.map(articleRow).join("") + '</div>') +
-      band("Published", "", '<div class="rows">' + out.map(articleRow).join("") + '</div>');
+      (ready.length ? band("Ready to post", "", list(ready)) : '') +
+      (wait.length ? band("Waiting", "on one of us", list(wait)) : '') +
+      (todo.length ? band("To write", "", list(todo)) : '') +
+      band("Published", "the archive, from 001", list(out));
     document.title = APP + " · Articles";
   }
 
@@ -223,7 +228,8 @@
       (it.img ? '<div class="cover"><img src="' + esc(it.img) + '" alt=""></div>' : '') +
       '<p class="tag"><i class="dot k-' + kind(it) + '"></i>' + esc(it.series) + ' · ' + esc(it.no) + pill(it.status) + '</p>' +
       '<h2 class="atitle">' + esc(it.title) + '</h2><p class="asub">' + esc(it.sub || "") + '</p>' +
-      '<p class="when">Substack, ' + esc(longDate(it.date)) + (it.url ? ' · <a href="' + esc(it.url) + '" target="_blank" rel="noopener">Read it on Substack</a>' : '') + '</p>' +
+      (it.waitingOn && it.status !== "published" ? '<p class="waiting">' + esc(waitLine(it)) + '</p>' : '') +
+      '<p class="when">Substack, ' + esc(longDate(it.date)) + (it.url ? ' · <a href="' + esc(it.url) + '" target="_blank" rel="noopener">Read it on Substack</a>' : '') + ', 9am</p>' +
       ((it.excerpt || []).length ? '<div class="excerpt">' + it.excerpt.map(function(p){ return '<p>' + esc(p) + '</p>'; }).join("") + '</div>' : '') +
       needsHtml(it) + '<div class="row">' + smsLink(it) + '</div>' + pager(it) + '</div>';
   }
@@ -261,6 +267,7 @@
     if (e.key === "ArrowLeft") location.hash = "#" + monthKey(mm.y, mm.m - 1);
     if (e.key === "ArrowRight") location.hash = "#" + monthKey(mm.y, mm.m + 1);
   });
+  (function(){ var a = $("#site-link"); if (a && DATA.site) a.href = DATA.site; })();
   if (window.dlTheme) window.dlTheme();
   route();
 })();
