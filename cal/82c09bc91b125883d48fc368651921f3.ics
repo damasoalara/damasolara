@@ -10,9 +10,9 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:a007@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20261207
-DTEND;VALUE=DATE:20261208
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
 SUMMARY:Substack: 007 · Come Over and Play
 DESCRIPTION:Goes out at 9am. Status: Waiting.\n\nOpen it in DamasoOS: http
  s://damasolara.com/os/#/a007
@@ -21,7 +21,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:a005@damasoos
-DTSTAMP:20261120T002445Z
+DTSTAMP:20261120T044136Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Substack: 005 · What Can You Get Under Three Million?
@@ -32,7 +32,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ig-005@damasoos
-DTSTAMP:20261120T002445Z
+DTSTAMP:20261120T044136Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Instagram: What three million buys
@@ -43,9 +43,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:a006@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
 SUMMARY:Substack: 006 · Solo Doesn’t Mean Alone
 DESCRIPTION:Goes out at 9am. Status: Waiting.\n\nOpen it in DamasoOS: http
  s://damasolara.com/os/#/a006
@@ -54,9 +54,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ig-006@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
 SUMMARY:Instagram: Everyone behind one sale
 DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
  oOS: https://damasolara.com/os/#/ig-006
@@ -65,7 +65,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:a009@damasoos
-DTSTAMP:20261120T002445Z
+DTSTAMP:20261120T044136Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:Substack: 009 · The Holiday Table
@@ -76,7 +76,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ig-009@damasoos
-DTSTAMP:20261120T002445Z
+DTSTAMP:20261120T044136Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Instagram: Built around a table
@@ -87,7 +87,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:thanks@damasoos
-DTSTAMP:20261120T002445Z
+DTSTAMP:20261120T044136Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Instagram: Thanksgiving
@@ -98,9 +98,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:a008@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
 SUMMARY:Substack: 008 · Frame
 DESCRIPTION:Goes out at 9am. Status: Waiting.\n\nOpen it in DamasoOS: http
  s://damasolara.com/os/#/a008
@@ -109,9 +109,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ig-008@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20261216
-DTEND;VALUE=DATE:20261217
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
 SUMMARY:Instagram: Frame
 DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
  oOS: https://damasolara.com/os/#/ig-008
@@ -119,54 +119,10 @@ URL:https://damasolara.com/os/#/ig-008
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:a010@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20270104
-DTEND;VALUE=DATE:20270105
-SUMMARY:Substack: 010 · The Quiet Season
-DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
- ps://damasolara.com/os/#/a010
-URL:https://damasolara.com/os/#/a010
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:ig-010@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20270106
-DTEND;VALUE=DATE:20270107
-SUMMARY:Instagram: The quiet season
-DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
- oOS: https://damasolara.com/os/#/ig-010
-URL:https://damasolara.com/os/#/ig-010
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:a011@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20270111
-DTEND;VALUE=DATE:20270112
-SUMMARY:Substack: 011 · Is Now a Good Time?
-DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
- ps://damasolara.com/os/#/a011
-URL:https://damasolara.com/os/#/a011
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:ig-011@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20270113
-DTEND;VALUE=DATE:20270114
-SUMMARY:Instagram: Is now a good time?
-DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
- oOS: https://damasolara.com/os/#/ig-011
-URL:https://damasolara.com/os/#/ig-011
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:year@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20261230
-DTEND;VALUE=DATE:20261231
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
 SUMMARY:Instagram: The year\, on the record
 DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
  /os/#/year
@@ -175,13 +131,1795 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ig-007@damasoos
-DTSTAMP:20261120T002445Z
-DTSTART;VALUE=DATE:20261209
-DTEND;VALUE=DATE:20261210
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
 SUMMARY:Instagram: Come over and hit
 DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
  oOS: https://damasolara.com/os/#/ig-007
 URL:https://damasolara.com/os/#/ig-007
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261124@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Instagram: Thursday's table
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261124
+URL:https://damasolara.com/os/#/ig-261124
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261201@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Instagram: Soup weather
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261201
+URL:https://damasolara.com/os/#/ig-261201
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261204@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Instagram: Rain delay
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261204
+URL:https://damasolara.com/os/#/ig-261204
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261208@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Instagram: The first pour
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261208
+URL:https://damasolara.com/os/#/ig-261208
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261211@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Instagram: Sobremesa
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261211
+URL:https://damasolara.com/os/#/ig-261211
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261215@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Instagram: What I make when people come over
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261215
+URL:https://damasolara.com/os/#/ig-261215
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261218@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Instagram: Rain on the hill
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261218
+URL:https://damasolara.com/os/#/ig-261218
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261222@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Instagram: The table after
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261222
+URL:https://damasolara.com/os/#/ig-261222
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-261225@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Instagram: Christmas morning
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-261225
+URL:https://damasolara.com/os/#/ig-261225
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270101@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Instagram: The first day
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270101
+URL:https://damasolara.com/os/#/ig-270101
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270105@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:Instagram: The racket question
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270105
+URL:https://damasolara.com/os/#/ig-270105
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270108@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Instagram: Where should we eat?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270108
+URL:https://damasolara.com/os/#/ig-270108
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270112@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Instagram: The bench
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270112
+URL:https://damasolara.com/os/#/ig-270112
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270115@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Instagram: Take a minute
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270115
+URL:https://damasolara.com/os/#/ig-270115
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270119@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:Instagram: Melbourne at 1am
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270119
+URL:https://damasolara.com/os/#/ig-270119
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270122@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Instagram: Poco a poco
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270122
+URL:https://damasolara.com/os/#/ig-270122
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270126@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Instagram: Calling the lines
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270126
+URL:https://damasolara.com/os/#/ig-270126
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270129@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:Instagram: Before it was Bel Air
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270129
+URL:https://damasolara.com/os/#/ig-270129
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a010@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Substack: 010 · Only Child
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a010
+URL:https://damasolara.com/os/#/a010
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270202@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:Instagram: What do I bring?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270202
+URL:https://damasolara.com/os/#/ig-270202
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270203@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+SUMMARY:Instagram: Only Child
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270203
+URL:https://damasolara.com/os/#/ig-270203
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270205@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:Instagram: On the record
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270205
+URL:https://damasolara.com/os/#/ig-270205
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270209@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Instagram: Amit
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270209
+URL:https://damasolara.com/os/#/ig-270209
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270212@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Instagram: Super Bowl on Valentine's Day
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270212
+URL:https://damasolara.com/os/#/ig-270212
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a011@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Substack: 011 · Dos Idiomas
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a011
+URL:https://damasolara.com/os/#/a011
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270216@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:Instagram: Con permiso
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270216
+URL:https://damasolara.com/os/#/ig-270216
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270217@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:Instagram: Dos Idiomas
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270217
+URL:https://damasolara.com/os/#/ig-270217
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270219@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:Instagram: Set for eight
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270219
+URL:https://damasolara.com/os/#/ig-270219
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270223@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+SUMMARY:Instagram: 1922\, one acre
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270223
+URL:https://damasolara.com/os/#/ig-270223
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270226@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:Instagram: The grill
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270226
+URL:https://damasolara.com/os/#/ig-270226
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a012@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Substack: 012 · The Desert Draw
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a012
+URL:https://damasolara.com/os/#/a012
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270302@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Instagram: The desert draw
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270302
+URL:https://damasolara.com/os/#/ig-270302
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270303@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:Instagram: The Desert Draw
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270303
+URL:https://damasolara.com/os/#/ig-270303
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270305@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Instagram: How did you start?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270305
+URL:https://damasolara.com/os/#/ig-270305
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270309@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:Instagram: New strings
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270309
+URL:https://damasolara.com/os/#/ig-270309
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270312@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Instagram: Oscar Sunday
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270312
+URL:https://damasolara.com/os/#/ig-270312
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a013@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Substack: 013 · Is Now a Good Time?
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a013
+URL:https://damasolara.com/os/#/a013
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270316@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270316
+DTEND;VALUE=DATE:20270317
+SUMMARY:Instagram: The serve I'm fixing
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270316
+URL:https://damasolara.com/os/#/ig-270316
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270317@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:Instagram: Is Now a Good Time?
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270317
+URL:https://damasolara.com/os/#/ig-270317
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270319@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:Instagram: Pásale
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270319
+URL:https://damasolara.com/os/#/ig-270319
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270323@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:Instagram: My doubles partner
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270323
+URL:https://damasolara.com/os/#/ig-270323
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270326@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Instagram: Dusk
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270326
+URL:https://damasolara.com/os/#/ig-270326
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a014@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:Substack: 014 · The Map in My Head
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a014
+URL:https://damasolara.com/os/#/a014
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270330@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+SUMMARY:Instagram: Should I wait for rates?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270330
+URL:https://damasolara.com/os/#/ig-270330
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270331@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Instagram: The Map in My Head
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270331
+URL:https://damasolara.com/os/#/ig-270331
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270402@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:Instagram: Where I eat on a Tuesday
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270402
+URL:https://damasolara.com/os/#/ig-270402
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270406@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:Instagram: My first boss
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270406
+URL:https://damasolara.com/os/#/ig-270406
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270409@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:Instagram: The bottle for a closing
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270409
+URL:https://damasolara.com/os/#/ig-270409
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a015@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:Substack: 015 · Closer
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a015
+URL:https://damasolara.com/os/#/a015
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270413@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:Instagram: Isn't it scary?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270413
+URL:https://damasolara.com/os/#/ig-270413
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270414@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Instagram: Closer
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270414
+URL:https://damasolara.com/os/#/ig-270414
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270416@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Instagram: Échale ganas
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270416
+URL:https://damasolara.com/os/#/ig-270416
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270420@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:Instagram: The invitations that mean something
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270420
+URL:https://damasolara.com/os/#/ig-270420
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270423@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:Instagram: The hedge
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270423
+URL:https://damasolara.com/os/#/ig-270423
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a016@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:Substack: 016 · Sobremesa
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a016
+URL:https://damasolara.com/os/#/a016
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270427@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:Instagram: Coffee before the first showing
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270427
+URL:https://damasolara.com/os/#/ig-270427
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270428@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:Instagram: Sobremesa
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270428
+URL:https://damasolara.com/os/#/ig-270428
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270430@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Instagram: The escrow officer
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270430
+URL:https://damasolara.com/os/#/ig-270430
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270504@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:Instagram: The long table
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270504
+URL:https://damasolara.com/os/#/ig-270504
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270507@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:Instagram: What do you do on a Sunday?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270507
+URL:https://damasolara.com/os/#/ig-270507
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a017@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:Substack: 017 · Zacatecas
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a017
+URL:https://damasolara.com/os/#/a017
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270511@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:Instagram: On the record
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270511
+URL:https://damasolara.com/os/#/ig-270511
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270512@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:Instagram: Zacatecas
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270512
+URL:https://damasolara.com/os/#/ig-270512
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270514@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+SUMMARY:Instagram: Provecho
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270514
+URL:https://damasolara.com/os/#/ig-270514
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270518@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+SUMMARY:Instagram: The photographer
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270518
+URL:https://damasolara.com/os/#/ig-270518
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270521@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:Instagram: Purple season
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270521
+URL:https://damasolara.com/os/#/ig-270521
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a018@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270524
+DTEND;VALUE=DATE:20270525
+SUMMARY:Substack: 018 · Do the Thing That Scares You
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a018
+URL:https://damasolara.com/os/#/a018
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270525@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:Instagram: Clay
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270525
+URL:https://damasolara.com/os/#/ig-270525
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270526@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:Instagram: Do the Thing That Scares You
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270526
+URL:https://damasolara.com/os/#/ig-270526
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270528@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:Instagram: Who brings what
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270528
+URL:https://damasolara.com/os/#/ig-270528
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270601@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:Instagram: Visitors in town
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270601
+URL:https://damasolara.com/os/#/ig-270601
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270604@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:Instagram: Dinner outside
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270604
+URL:https://damasolara.com/os/#/ig-270604
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a019@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:Substack: 019 · The Agent Who Takes My Calls
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a019
+URL:https://damasolara.com/os/#/a019
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270608@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270608
+DTEND;VALUE=DATE:20270609
+SUMMARY:Instagram: Ojalá
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270608
+URL:https://damasolara.com/os/#/ig-270608
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270609@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270609
+DTEND;VALUE=DATE:20270610
+SUMMARY:Instagram: The Agent Who Takes My Calls
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270609
+URL:https://damasolara.com/os/#/ig-270609
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270611@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:Instagram: June gloom
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270611
+URL:https://damasolara.com/os/#/ig-270611
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270615@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:Instagram: A dish from home
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270615
+URL:https://damasolara.com/os/#/ig-270615
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270618@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+SUMMARY:Instagram: Early court
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270618
+URL:https://damasolara.com/os/#/ig-270618
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a020@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:Substack: 020 · A Yard That Works
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a020
+URL:https://damasolara.com/os/#/a020
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270622@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270622
+DTEND;VALUE=DATE:20270623
+SUMMARY:Instagram: On the record
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270622
+URL:https://damasolara.com/os/#/ig-270622
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270623@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270624
+SUMMARY:Instagram: A Yard That Works
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270623
+URL:https://damasolara.com/os/#/ig-270623
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270625@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:Instagram: Desvelado
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270625
+URL:https://damasolara.com/os/#/ig-270625
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270629@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+SUMMARY:Instagram: Grass\, 150 years
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270629
+URL:https://damasolara.com/os/#/ig-270629
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270702@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:Instagram: Fourth of July
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270702
+URL:https://damasolara.com/os/#/ig-270702
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a021@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270705
+DTEND;VALUE=DATE:20270706
+SUMMARY:Substack: 021 · Whites
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a021
+URL:https://damasolara.com/os/#/a021
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270706@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270706
+DTEND;VALUE=DATE:20270707
+SUMMARY:Instagram: Casiano Road
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270706
+URL:https://damasolara.com/os/#/ig-270706
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270707@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270707
+DTEND;VALUE=DATE:20270708
+SUMMARY:Instagram: Whites
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270707
+URL:https://damasolara.com/os/#/ig-270707
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270709@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:Instagram: Finals weekend
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270709
+URL:https://damasolara.com/os/#/ig-270709
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270713@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270713
+DTEND;VALUE=DATE:20270714
+SUMMARY:Instagram: What's playing
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270713
+URL:https://damasolara.com/os/#/ig-270713
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270716@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:Instagram: How do you remember names?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270716
+URL:https://damasolara.com/os/#/ig-270716
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a022@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270719
+DTEND;VALUE=DATE:20270720
+SUMMARY:Substack: 022 · A Gate Is a Threshold
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a022
+URL:https://damasolara.com/os/#/a022
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270720@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:Instagram: Somebody's birthday
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270720
+URL:https://damasolara.com/os/#/ig-270720
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270721@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270721
+DTEND;VALUE=DATE:20270722
+SUMMARY:Instagram: A Gate Is a Threshold
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270721
+URL:https://damasolara.com/os/#/ig-270721
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270723@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:Instagram: Who taught me tennis
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270723
+URL:https://damasolara.com/os/#/ig-270723
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270727@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270727
+DTEND;VALUE=DATE:20270728
+SUMMARY:Instagram: The outdoor couch
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270727
+URL:https://damasolara.com/os/#/ig-270727
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270730@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270730
+DTEND;VALUE=DATE:20270731
+SUMMARY:Instagram: Glenroy
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270730
+URL:https://damasolara.com/os/#/ig-270730
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a023@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270802
+DTEND;VALUE=DATE:20270803
+SUMMARY:Substack: 023 · How a House Changes Hands Quietly
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a023
+URL:https://damasolara.com/os/#/a023
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270803@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270803
+DTEND;VALUE=DATE:20270804
+SUMMARY:Instagram: The score
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270803
+URL:https://damasolara.com/os/#/ig-270803
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270804@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270804
+DTEND;VALUE=DATE:20270805
+SUMMARY:Instagram: How a House Changes Hands Quietly
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270804
+URL:https://damasolara.com/os/#/ig-270804
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270806@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270806
+DTEND;VALUE=DATE:20270807
+SUMMARY:Instagram: Madrugada
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270806
+URL:https://damasolara.com/os/#/ig-270806
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270810@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270810
+DTEND;VALUE=DATE:20270811
+SUMMARY:Instagram: A gate
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270810
+URL:https://damasolara.com/os/#/ig-270810
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270813@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:Instagram: What are you reading?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270813
+URL:https://damasolara.com/os/#/ig-270813
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a024@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
+SUMMARY:Substack: 024 · Harvest
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a024
+URL:https://damasolara.com/os/#/a024
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270817@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270817
+DTEND;VALUE=DATE:20270818
+SUMMARY:Instagram: A first lesson
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270817
+URL:https://damasolara.com/os/#/ig-270817
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270818@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:Instagram: Harvest
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270818
+URL:https://damasolara.com/os/#/ig-270818
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270820@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:Instagram: A teacher
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270820
+URL:https://damasolara.com/os/#/ig-270820
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270824@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270824
+DTEND;VALUE=DATE:20270825
+SUMMARY:Instagram: Prep
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270824
+URL:https://damasolara.com/os/#/ig-270824
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270827@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270827
+DTEND;VALUE=DATE:20270828
+SUMMARY:Instagram: Antojo
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270827
+URL:https://damasolara.com/os/#/ig-270827
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a025@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270831
+SUMMARY:Substack: 025 · Belief\, Borrowed
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a025
+URL:https://damasolara.com/os/#/a025
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270831@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270831
+DTEND;VALUE=DATE:20270901
+SUMMARY:Instagram: The US Open is on
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270831
+URL:https://damasolara.com/os/#/ig-270831
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270901@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:Instagram: Belief\, Borrowed
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270901
+URL:https://damasolara.com/os/#/ig-270901
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270903@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270903
+DTEND;VALUE=DATE:20270904
+SUMMARY:Instagram: Mulholland
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270903
+URL:https://damasolara.com/os/#/ig-270903
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270907@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270908
+SUMMARY:Instagram: What does off-market mean?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270907
+URL:https://damasolara.com/os/#/ig-270907
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270910@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:Instagram: Fresh grip
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270910
+URL:https://damasolara.com/os/#/ig-270910
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a026@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270914
+SUMMARY:Substack: 026 · Herencia
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a026
+URL:https://damasolara.com/os/#/a026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270914@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270914
+DTEND;VALUE=DATE:20270915
+SUMMARY:Instagram: Sale
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270914
+URL:https://damasolara.com/os/#/ig-270914
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270915@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:Instagram: Herencia
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270915
+URL:https://damasolara.com/os/#/ig-270915
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270917@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270918
+SUMMARY:Instagram: Herencia
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270917
+URL:https://damasolara.com/os/#/ig-270917
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270921@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+SUMMARY:Instagram: The wine I'm learning
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270921
+URL:https://damasolara.com/os/#/ig-270921
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270924@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:Instagram: To my 21-year-old self
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270924
+URL:https://damasolara.com/os/#/ig-270924
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a027@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270927
+DTEND;VALUE=DATE:20270928
+SUMMARY:Substack: 027 · Mid-Century on the Hill
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a027
+URL:https://damasolara.com/os/#/a027
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270928@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270928
+DTEND;VALUE=DATE:20270929
+SUMMARY:Instagram: Which language for what
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-270928
+URL:https://damasolara.com/os/#/ig-270928
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-270929@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20270929
+DTEND;VALUE=DATE:20270930
+SUMMARY:Instagram: Mid-Century on the Hill
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-270929
+URL:https://damasolara.com/os/#/ig-270929
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271001@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:Instagram: Someone at home
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271001
+URL:https://damasolara.com/os/#/ig-271001
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271005@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271006
+SUMMARY:Instagram: Querer es poder
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271005
+URL:https://damasolara.com/os/#/ig-271005
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271008@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271008
+DTEND;VALUE=DATE:20271009
+SUMMARY:Instagram: The morning after
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271008
+URL:https://damasolara.com/os/#/ig-271008
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a028@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:Substack: 028 · The First Door
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a028
+URL:https://damasolara.com/os/#/a028
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271012@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271012
+DTEND;VALUE=DATE:20271013
+SUMMARY:Instagram: Mande
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271012
+URL:https://damasolara.com/os/#/ig-271012
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271013@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271013
+DTEND;VALUE=DATE:20271014
+SUMMARY:Instagram: The First Door
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-271013
+URL:https://damasolara.com/os/#/ig-271013
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271015@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:Instagram: Convivir
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271015
+URL:https://damasolara.com/os/#/ig-271015
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271019@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271019
+DTEND;VALUE=DATE:20271020
+SUMMARY:Instagram: On the record
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271019
+URL:https://damasolara.com/os/#/ig-271019
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271022@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:Instagram: The map in my head
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271022
+URL:https://damasolara.com/os/#/ig-271022
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a029@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271025
+DTEND;VALUE=DATE:20271026
+SUMMARY:Substack: 029 · Ofrenda
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a029
+URL:https://damasolara.com/os/#/a029
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271026@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271026
+DTEND;VALUE=DATE:20271027
+SUMMARY:Instagram: What are you working on?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271026
+URL:https://damasolara.com/os/#/ig-271026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271027@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271028
+SUMMARY:Instagram: Ofrenda
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-271027
+URL:https://damasolara.com/os/#/ig-271027
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271029@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:Instagram: A toast
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271029
+URL:https://damasolara.com/os/#/ig-271029
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271102@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271102
+DTEND;VALUE=DATE:20271103
+SUMMARY:Instagram: Día de los Muertos
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271102
+URL:https://damasolara.com/os/#/ig-271102
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271105@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:Instagram: November 1961
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271105
+URL:https://damasolara.com/os/#/ig-271105
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a030@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271108
+DTEND;VALUE=DATE:20271109
+SUMMARY:Substack: 030 · The Fire That Wrote the Rules
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a030
+URL:https://damasolara.com/os/#/a030
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271109@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+SUMMARY:Instagram: A gift for someone who has everything
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271109
+URL:https://damasolara.com/os/#/ig-271109
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271110@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:Instagram: The Fire That Wrote the Rules
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-271110
+URL:https://damasolara.com/os/#/ig-271110
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271112@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271112
+DTEND;VALUE=DATE:20271113
+SUMMARY:Instagram: The winding road
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271112
+URL:https://damasolara.com/os/#/ig-271112
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271116@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271116
+DTEND;VALUE=DATE:20271117
+SUMMARY:Instagram: Table for two
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271116
+URL:https://damasolara.com/os/#/ig-271116
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271119@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271119
+DTEND;VALUE=DATE:20271120
+SUMMARY:Instagram: A court I love
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271119
+URL:https://damasolara.com/os/#/ig-271119
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a031@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271122
+DTEND;VALUE=DATE:20271123
+SUMMARY:Substack: 031 · A Year of Doors
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a031
+URL:https://damasolara.com/os/#/a031
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271123@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271123
+DTEND;VALUE=DATE:20271124
+SUMMARY:Instagram: Who gets a seat
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271123
+URL:https://damasolara.com/os/#/ig-271123
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271124@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271124
+DTEND;VALUE=DATE:20271125
+SUMMARY:Instagram: A Year of Doors
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-271124
+URL:https://damasolara.com/os/#/ig-271124
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271126@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271126
+DTEND;VALUE=DATE:20271127
+SUMMARY:Instagram: The housekeeper at seven
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271126
+URL:https://damasolara.com/os/#/ig-271126
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271130@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:Instagram: The market run
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271130
+URL:https://damasolara.com/os/#/ig-271130
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271203@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+SUMMARY:Instagram: The best seat at the table
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271203
+URL:https://damasolara.com/os/#/ig-271203
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a032@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271206
+DTEND;VALUE=DATE:20271207
+SUMMARY:Substack: 032 · The Quiet Season
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a032
+URL:https://damasolara.com/os/#/a032
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271207@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271207
+DTEND;VALUE=DATE:20271208
+SUMMARY:Instagram: The good glasses
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271207
+URL:https://damasolara.com/os/#/ig-271207
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271208@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271208
+DTEND;VALUE=DATE:20271209
+SUMMARY:Instagram: The Quiet Season
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-271208
+URL:https://damasolara.com/os/#/ig-271208
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271210@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271210
+DTEND;VALUE=DATE:20271211
+SUMMARY:Instagram: Who lives there?
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271210
+URL:https://damasolara.com/os/#/ig-271210
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271214@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271214
+DTEND;VALUE=DATE:20271215
+SUMMARY:Instagram: Candles on
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271214
+URL:https://damasolara.com/os/#/ig-271214
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271217@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:Instagram: 2027\, on the record
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271217
+URL:https://damasolara.com/os/#/ig-271217
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a033@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271220
+DTEND;VALUE=DATE:20271221
+SUMMARY:Substack: 033 · The Last Table of the Year
+DESCRIPTION:Goes out at 9am. Status: To write.\n\nOpen it in DamasoOS: htt
+ ps://damasolara.com/os/#/a033
+URL:https://damasolara.com/os/#/a033
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271221@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271221
+DTEND;VALUE=DATE:20271222
+SUMMARY:Instagram: Late lunch
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271221
+URL:https://damasolara.com/os/#/ig-271221
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271222@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271222
+DTEND;VALUE=DATE:20271223
+SUMMARY:Instagram: The Last Table of the Year
+DESCRIPTION:The post that carries this week's article.\n\nOpen it in Damas
+ oOS: https://damasolara.com/os/#/ig-271222
+URL:https://damasolara.com/os/#/ig-271222
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271224@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Instagram: Nochebuena
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271224
+URL:https://damasolara.com/os/#/ig-271224
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271228@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271228
+DTEND;VALUE=DATE:20271229
+SUMMARY:Instagram: Ball machine
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271228
+URL:https://damasolara.com/os/#/ig-271228
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ig-271231@damasoos
+DTSTAMP:20261120T044136Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:Instagram: A year at the table
+DESCRIPTION:Instagram post.\n\nOpen it in DamasoOS: https://damasolara.com
+ /os/#/ig-271231
+URL:https://damasolara.com/os/#/ig-271231
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

@@ -8,7 +8,7 @@
 
   var KEY_STORE = "dl-os-key-v1";
   var TITLE = "DamasoOS";
-  var EXTERNAL = ["/os/assets/app-c.js"];
+  var EXTERNAL = ["/os/assets/app-d.js"];
 
   function b64(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
   function payload() { return JSON.parse(document.getElementById("pp-payload").textContent); }
