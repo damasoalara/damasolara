@@ -139,7 +139,7 @@ unlock opens everything. `/calendar/` now redirects to `/os/#calendar`, and `/br
 forwards to `/os/#brandscript`.
 - **Source lives outside this repo:** `Damaso Lara/DamasoOS/` (shell.html, data.json, assets/). Edit, then
   `PP_PASS='...' python3 build.py <this repo> <gate letter> <assets letter>`; bump a letter when its files
-  change and delete the old ones. **Current: gate `b`, assets `b`; brandscript `-e`.**
+  change and delete the old ones. **Current: gate `c`, assets `c`; brandscript `-e`.**
 - `os/assets/*` are public (code and styles only, no names or words). Everything else is in the ciphertext.
 - `_headers` lets `/brandscript/*` (only) be framed by this origin: it detaches the site-wide
   `X-Frame-Options: DENY` and `frame-ancestors 'none'` with `!` and sets SAMEORIGIN / `'self'`.

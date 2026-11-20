@@ -334,3 +334,12 @@ a.rowline:hover { background: var(--fill); }
 .article .waiting { margin-top: 14px; padding: 10px 12px; border-radius: 10px; background: var(--ask-fill); color: var(--ask); font-size: 14px; }
 /* On the phone tab bar the site link would run off the edge; it stays in the desktop sidebar. */
 @media (max-width: 820px) { #site-link { display: none; } }
+
+/* One left edge (Ivan, 2026-11-19, the Articles note sat left of its heading on a wide screen).
+   The panel is one centred column, 1240px at most. Every block starts at its left edge; a narrower
+   block (a note, the article, the plan) keeps its measure but never re-centres itself. Before this,
+   each block centred on its own width, so anything narrower than 1240px started somewhere else. */
+.main:not(.doc) { display: grid; grid-template-columns: minmax(0, 1240px); justify-content: center; align-content: start; }
+.main:not(.doc) > * { margin-inline: 0; min-width: 0; }
+/* Grid items don't collapse margins, so the note's own bottom margin would add to the band's top. */
+.main:not(.doc) > .page-note { margin-bottom: 0; }
