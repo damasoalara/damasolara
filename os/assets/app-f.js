@@ -160,7 +160,7 @@
 
   /* ---------- articles: every Substack piece, published and planned ---------- */
   function shortDate(s){ return new Date(s + "T12:00:00").toLocaleDateString("en-US", { weekday:"short", month:"short", day:"numeric", year:"numeric" }); }
-  var PILL = { published:["ok","Published"], ready:["go","Ready to post"], waiting:["warn","Waiting"], draft:["warn","Waiting"], todo:["","To write"] };
+  var PILL = { published:["ok","Published"], scheduled:["go","Scheduled"], ready:["go","Ready to post"], waiting:["warn","Waiting"], draft:["warn","Waiting"], todo:["","To write"] };
   function pill(st){ var p = PILL[st] || ["", st]; return '<span class="pill ' + p[0] + '">' + p[1] + '</span>'; }
   function band(title, aside, inner){ return '<div class="band"><h2>' + title + (aside ? '<span class="aside">' + aside + '</span>' : '') + '</h2>' + inner + '</div>'; }
   function waitLine(it){ return it.waitingOn ? "On " + it.waitingOn + ": " + it.waitingFor : ""; }
@@ -172,11 +172,11 @@
     setCurrent("articles"); main.classList.remove("doc");
     var arts = items.filter(function(i){ return i.type === "substack"; });
     var by = function(st){ return arts.filter(function(i){ return st.indexOf(i.status) >= 0; }); };
-    var out = by(["published"]).reverse(), ready = by(["ready"]), wait = by(["waiting","draft"]), todo = by(["todo"]);
+    var out = by(["published"]).reverse(), ready = by(["scheduled","ready"]), wait = by(["waiting","draft"]), todo = by(["todo"]);
     var list = function(a){ return a.length ? '<div class="rows">' + a.map(articleRow).join("") + '</div>' : ''; };
     main.innerHTML = '<div class="page-head"><h1>Articles</h1><span class="count">' + out.length + ' published, ' + (arts.length - out.length) + ' coming</span></div>' +
       '<p class="page-note">' + esc(DATA.articlesNote || "") + '</p>' +
-      (ready.length ? band("Ready to post", "", list(ready)) : '') +
+      (ready.length ? band("Ready to post", "and scheduled", list(ready)) : '') +
       (wait.length ? band("Waiting", "on one of us", list(wait)) : '') +
       (todo.length ? band("To write", "", list(todo)) : '') +
       band("Published", "the archive, from 001", list(out));
